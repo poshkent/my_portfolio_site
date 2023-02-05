@@ -1,63 +1,22 @@
+{% extends "portfolio/base.html" %}
 {% load static %}
-{% csrf_token %}
-<!doctype html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>Harelik Pavel</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
-    <link rel="stylesheet" href="{% static 'css/root.css' %}">
-</head>
-
-<body>
-	<header>
-        <a href="./">Home</a>
-        <a href="./hobbies">All hobbies</a>
-        <a href="./contact">Contact</a>
-        {% if user.is_authenticated %}
-        <a href='./log_out'>Log out</a>
-        {% else %}
-        <a href='./log_in'>Log in</a>
-        <a href='./register'>Register</a>
-        {% endif %}
-    </header>
-    <hr>
-	<div id="content">
-
-		<div id='biography'>
-			<h1>Harelik<br>Pavel</h1>
-			<h3>Student<br> 17 years old, Gdańsk</h3>
-		</div>
-
-		<img src="{% static 'img/avatar.jpg' %}" alt="">
-        {{ user }}
-
-		<div id="hobbies">
-			<h2>My Hobbies</h2>
-			<div class="content">
-				<p><a href="./hobbies#crafting">Crafting out of wood</a></p>
-				<p><a href="./hobbies#coding">Coding</a></p>
-				<p><a href="./hobbies#sport">Playing sports</a></p>
-			</div>
-		</div>
-
+{% block title %}Pavel Harelik{% endblock %}
+{% block css %}
+	<link rel="stylesheet" href="{% static 'css/root.css' %}">
+{% endblock %}
+{% block content %}
+	<div id='biography'>
+		<h1>Harelik<br>Pavel</h1>
+		<h3>Student<br> 17 years old, Gdańsk</h3>
 	</div>
-
-	<footer>
-		<a href="#" title="go up" class="topbutton">Go to the top</a>
-		<div>
-			<h2>
-				Want to know more or just chat? <br>
-				You are welcome!
-			</h2>
+	<img src="{% static 'img/avatar.jpg' %}" alt="">
+	{{ user }}
+	<div id="hobbies">
+		<h2>My Hobbies</h2>
+		<div class="content">
+			<p><a href="./hobbies#crafting">Crafting out of wood</a></p>
+			<p><a href="./hobbies#coding">Coding</a></p>
+			<p><a href="./hobbies#sport">Playing sports</a></p>
 		</div>
-		<div id="logo">
-			<a href="https://t.me/greedann" target="_blank"><img src="{% static 'img/telegram.png' %}" alt=""></a>
-			<a href="https://www.instagram.com/greedann/" target="_blank"><img src="{% static 'img/instagram.png' %}" alt=""></a>
-			<a href="https://m.me/greeedann" target="_blank"><img src="{% static 'img/messenger.webp' %}" alt=""></a>
-		</div>
-</footer>
-</body>
-
-</html>
+	</div>
+{% endblock %}

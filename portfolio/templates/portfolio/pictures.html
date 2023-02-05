@@ -1,0 +1,76 @@
+{% extends "portfolio/base.html" %}
+{% load static %}
+{% block title %}My Hobbies{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/hobbies.css' %}">
+{% endblock %}
+{% block content %}
+<menu>
+    <li>
+        <a href="#crafting">Crafting out of wood</a>
+    </li>
+    <li>
+        <a href="#coding">Coding</a>
+    </li>
+    <li>
+        <a href="#sport">Playing sports</a>
+        <menu>
+    <li><a href="#running">Running</a></li>
+    <li><a href="#voleyball">Playing voleyball</a></li>
+    <li><a href="#bike">Riding a bike</a></li>
+</menu>
+</li>
+</menu>
+<div id="crafting">
+    <h2>Crafting out of wood</h2>
+
+    <div class="hovergallery">
+        <img src="{% static 'img/1.jpg' %}" alt="New year tree" />
+        <img src="{% static 'img/2.jpg' %}" alt="New year tree" />
+        <img src="{% static 'img/3.jpg' %}" alt="Lamp" />
+        <img src="{% static 'img/4.jpg' %}" alt="Wolf" />
+        <img src="{% static 'img/5.jpg' %}" alt="Wolf" />
+    </div>
+</div>
+
+<div id="coding">
+    <h2>Coding</h2>
+
+    <table>
+        <tr>
+            <th><b>Language</b></th>
+            <th><b>Experience</b></th>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>2 years</td>
+        </tr>
+        <tr>
+            <td>C++</td>
+            <td>2.5 years</td>
+        </tr>
+        <tr>
+            <td>HTML, CSS</td>
+            <td>2 month</td>
+        </tr>
+    </table>
+</div>
+
+<div id="sport">
+    <h2>Playing sports</h2>
+    <div id="running">
+        <h2>Running</h2>
+        <img src="{% static 'img/running.jpg' %}" alt="">
+    </div>
+
+    <div id="voleyball">
+        <h2>Playing voleyball</h2>
+        <img src="{% static 'img/voleyball.jpg' %}" alt="">
+    </div>
+
+    <div id="bike">
+        <h2>Riding bike</h2>
+        <img src="{% static 'img/bike.jpg' %}" alt="">
+    </div>
+</div>
+{% endblock %}
