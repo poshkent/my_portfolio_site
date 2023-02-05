@@ -1,0 +1,90 @@
+.section {
+    margin-top: 30px;
+    position: relative;
+}
+
+table {
+    font-family: 'Gilroy-Medium';
+    width: 80%;
+    margin: 10%;
+}
+
+menu menu {
+    list-style-type: circle;
+}
+
+tr,
+td {
+    text-align: center;
+    width: 50%;
+    border-bottom: 1px solid #ccc;
+}
+
+tr {
+    height: 50px;
+}
+
+th {
+    border-bottom: 2px solid #ccc;
+}
+
+#galery {
+    display: flex;
+}
+
+#user_img {
+    text-align: center;
+    margin-inline: 20px;
+}
+
+#user_img img {
+    max-width: 250px;
+    max-height: 125px;
+}
+
+
+.hovergallery {
+    padding-left: 7%;
+}
+
+menu a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Gilroy-Bold';
+    font-size: 18px;
+    line-height: 22px;
+}
+
+#sport img {
+    width: 60%;
+    padding-left: 20%;
+}
+
+.hovergallery img {
+    width: 18%;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    opacity: 0.7;
+    margin: auto;
+}
+
+.hovergallery img:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    box-shadow: 0px 0px 30px gray;
+    -webkit-box-shadow: 0px 0px 30px gray;
+    -moz-box-shadow: 0px 0px 30px gray;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 900px) {
+    .hovergallery img {
+        width: 80%;
+        margin-left: 10%;
+    }
+}

@@ -26,7 +26,7 @@ if IN_WEB:
     DEBUG = False
 else:
     DEBUG = True
-    from config import SECRET_KEY
+    SECRET_KEY = 'django-insecure-hn12dq32=d(5bzy=3h7w=@=5i$aw4jt6b)$*8vs+t-r@eq6lo^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 

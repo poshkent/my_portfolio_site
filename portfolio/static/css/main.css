@@ -1,0 +1,149 @@
+html,
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: #FFF;
+	color: #000;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-height: 100vh;
+	flex: auto;
+}
+
+h2 {
+	font-family: 'Gilroy-Bold';
+	font-size: 34px;
+	line-height: 42px;
+	text-align: center;
+	padding-bottom: 0px;
+}
+
+h1 {
+	font-family: 'Gilroy-Bold';
+	font-size: 47px;
+	line-height: 59px;
+}
+
+hr {
+	width: 80%;
+}
+
+header a {
+	font-family: 'Gilroy-Bold';
+	font-size: 18px;
+	line-height: 22px;
+	margin-inline: 20px;
+	margin-top: 30px;
+	color: #828282;
+	text-decoration: none;
+}
+
+header {
+	display: inline-flex;
+	height: 80px;
+	width: 80%;
+	margin-left: 10%;
+}
+
+.active {
+	color: #070707;
+}
+
+#home {
+	left: 5%;
+	top: 29px;
+
+}
+
+#content {
+	flex: auto;
+	width: 80%;
+	margin-left: 10%;
+}
+
+
+footer {
+	flex: 0 0 auto;
+	width: 80%;
+	left: 10%;
+	text-align: center;
+	margin-left: 10%;
+}
+
+#logo img {
+	width: 40px;
+	padding: 60px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#logo {
+	display: inline-block;
+}
+
+.topbutton {
+	text-decoration: none;
+	font-family: 'Gilroy-Bold';
+	position: fixed;
+	/* Fixed/sticky position */
+	bottom: 20px;
+	/* Place the button at the bottom of the page */
+	right: 30px;
+	/* Place the button 30px from the right */
+	z-index: 99;
+	/* Make sure it does not overlap */
+	border: none;
+	/* Remove borders */
+	outline: none;
+	/* Remove outline */
+	background-color: #c3c3c3;
+	/* Set a background color */
+	color: black;
+	/* Text color */
+	cursor: pointer;
+	/* Add a mouse pointer on hover */
+	padding: 15px;
+	/* Some padding */
+	border-radius: 10px;
+	/* Rounded corners */
+	font-size: 18px;
+	/* Increase font size */
+}
+
+@media only screen and (max-width: 900px) {
+	header {
+		width: 100%;
+		left: 0%;
+		top: 0%;
+		position: fixed;
+		background-color: #a9a9a9;
+		z-index: 99999999;
+	}
+
+	#content {
+		margin-top: 78px;
+	}
+
+}
+
+@font-face {
+	font-family: "Gilroy-Bold";
+	src: url("../fonts/Gilroy-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Gilroy-Medium";
+	src: url("../fonts/Gilroy-Medium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Gilroy-Medium";
+	src: url("../fonts/Gilroy-Medium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

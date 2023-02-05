@@ -1,0 +1,155 @@
+fieldset {
+    border: 2px solid #ccc;
+    width: 50%;
+}
+
+#custom-handle {
+    width: 3em;
+    height: 1.6em;
+    top: 50%;
+    margin-top: -.8em !important;
+    text-align: center;
+    line-height: 1.6em;
+}
+
+#time,
+#hint,
+#slider {
+    display: none;
+}
+
+label {
+    font-family: 'Gilroy-Medium';
+    font-size: 22px;
+    line-height: 30px;
+}
+
+#slider {
+    width: 30%;
+}
+
+#content div {
+    margin-top: 30px;
+}
+
+#hint_btn {
+    transition-duration: 0.3s;
+    height: 40px;
+    width: 120px;
+    background: white;
+    border: 2px solid #ccc;
+    margin-right: 30px;
+    font-size: 15px;
+    font-family: 'Gilroy-Medium';
+    font-weight: normal;
+}
+
+
+
+#hint_btn:hover {
+    background: #ccc;
+}
+
+#custom-handle {
+    width: 3em;
+    height: 1.6em;
+    top: 50%;
+    margin-top: -.8em;
+    text-align: center;
+    line-height: 1.6em;
+}
+
+#buttons input {
+    transition-duration: 0.3s;
+    height: 40px;
+    width: 80px;
+    background-color: white;
+    border: 2px solid #ccc;
+    margin-right: 30px;
+    font-size: 15px;
+    font-family: 'Gilroy-Medium';
+}
+
+#buttons input:hover {
+    background-color: #ccc;
+}
+
+
+input[type=button] {
+    transition-duration: 0.3s;
+    height: 40px;
+    width: 120px;
+    background-color: white;
+    border: 2px solid #ccc;
+    margin-right: 30px;
+    font-size: 15px;
+    font-family: 'Gilroy-Medium';
+}
+
+#update_time {
+    display: none;
+}
+
+.error {
+    color: red;
+}
+
+#time input:hover {
+    background-color: #ccc;
+}
+
+
+
+
+textarea,
+select,
+input[type=text] {
+    background-color: #ccc;
+    border: #ccc;
+    font-size: 22px;
+    font-family: 'Gilroy-Medium';
+}
+
+input[type=range] {
+    width: 200px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    border-radius: 10px/100%;
+    height: 7px;
+    border: none;
+    background-color: #ccc;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    background: black;
+    border: none;
+    border-radius: 10px/100%;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    -webkit-appearance: none;
+    margin-top: -4px;
+}
+
+input[type=range]::-moz-range-track {
+    border-radius: 10px/100%;
+    height: 5px;
+    border: none;
+    background-color: #ccc;
+}
+
+input[type=range]::-moz-range-thumb {
+    background: black;
+    border: none;
+    border-radius: 10px/100%;
+    cursor: pointer;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Gilroy-Medium';
+}
