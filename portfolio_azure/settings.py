@@ -31,6 +31,7 @@ else:
 # SECURITY WARNING: don't run with debug turned on in production!
 
 ALLOWED_HOSTS = ["*"]
+CSRF_TRUSTED_ORIGINS = ['https://*.greedann.live','https://*.127.0.0.1']
 
 
 # Application definition
