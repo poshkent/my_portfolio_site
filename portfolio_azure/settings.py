@@ -81,35 +81,13 @@ WSGI_APPLICATION = 'portfolio_azure.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-if IN_WEB:
-    DBHOST=os.environ['LOCAL_HOST']
-    DBNAME=os.environ['LOCAL_DATABASE']
-    DBUSER=os.environ['LOCAL_USERNAME']
-    DBPASS=os.environ['LOCAL_PASSWORD']
 
-    # Configure database connection for remote PostgreSQL instance.
-    if 'USE_REMOTE_POSTGRESQL' in os.environ:
-        DBNAME=os.environ['AZURE_POSTGRESQL_DATABASE']
-        DBHOST=os.environ['AZURE_POSTGRESQL_HOST']
-        DBUSER=os.environ['AZURE_POSTGRESQL_USERNAME']
-        DBPASS=os.environ['AZURE_POSTGRESQL_PASSWORD']
-
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': DBNAME,
-            'HOST': DBHOST,
-            'USER': DBUSER,
-            'PASSWORD': DBPASS,
-        }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
+}
 
 
 # Password validation
