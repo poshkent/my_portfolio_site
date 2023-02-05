@@ -42,8 +42,7 @@ header a {
 header {
 	display: inline-flex;
 	height: 80px;
-	width: 80%;
-	margin-left: 10%;
+	justify-content: space-evenly;
 }
 
 .active {
@@ -119,6 +118,11 @@ footer {
 		position: fixed;
 		background-color: #a9a9a9;
 		z-index: 99999999;
+		margin-left: 0%;
+	}
+
+	header a {
+		color: #070707;
 	}
 
 	#content {
