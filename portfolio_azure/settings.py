@@ -24,13 +24,15 @@ IN_WEB = "SECRET_KEY" in os.environ
 if IN_WEB:
     SECRET_KEY = os.environ["SECRET_KEY"]
     DEBUG = False
+    ALLOWED_HOSTS = ["greedann.live", "www.greedann.live", ""]
 else:
     DEBUG = True
-    SECRET_KEY = 'django-insecure-hn12dq32=d(5bzy=3h7w=@=5i$aw4jt6b)$*8vs+t-r@eq6lo^'
+    from config import SECRET_KEY
+    ALLOWED_HOSTS = ["*"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-ALLOWED_HOSTS = ["*"]
+
 CSRF_TRUSTED_ORIGINS = ['https://*.greedann.live','https://*.127.0.0.1']
 
 
