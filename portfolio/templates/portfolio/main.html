@@ -2,21 +2,23 @@
 {% load static %}
 {% block title %}Pavel Harelik{% endblock %}
 {% block css %}
-	<link rel="stylesheet" href="{% static 'css/root.css' %}">
+<link rel="stylesheet" href="{% static 'css/root.css' %}">
 {% endblock %}
 {% block content %}
-	<div id='biography'>
-		<h1>Harelik<br>Pavel</h1>
-		<h3>Student<br> 17 years old, Gdańsk</h3>
+<div id='biography'>
+	<h1>Harelik<br>Pavel</h1>
+	<h3>Student<br> 17 years old, Gdańsk</h3>
+</div>
+
+<img src="{% static 'img/avatar.jpg' %}" alt="">
+<div id="hobbies">
+	<h2>My Skills</h2>
+	<div class="content">
+		<p><a href="/projects?skill=python">Python</a></p>
+		<p><a href="/projects?skill=django">Django</a></p>
+		<p><a href="/projects?skill=c++">C++</a></p>
+		<p><a href="/projects?skill=php">PHP</a></p>
+		<p><a href="/projects?skill=html">HTML, CSS, JS</a></p>
 	</div>
-	<img src="{% static 'img/avatar.jpg' %}" alt="">
-	{{ user }}
-	<div id="hobbies">
-		<h2>My Hobbies</h2>
-		<div class="content">
-			<p><a href="./hobbies#crafting">Crafting out of wood</a></p>
-			<p><a href="./hobbies#coding">Coding</a></p>
-			<p><a href="./hobbies#sport">Playing sports</a></p>
-		</div>
-	</div>
+</div>
 {% endblock %}

@@ -1,0 +1,19 @@
+{% extends "portfolio/base.html" %}
+{% load static %}
+{% block title %}My Hobbies{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/projects.css' %}">
+{% endblock %}
+{% block content %}
+{%if projects%}
+{% for project in projects %}
+    <div class="project">
+        <a href="{% url 'details' id=project.id %}">{{ project.name }}</a>
+        <br>
+        <img src="{{ project.image.url }}" alt="">
+    </div>
+{% endfor %}
+{% else %}
+    <h2>There is no projects yet</h2>
+{% endif %}
+{% endblock %}

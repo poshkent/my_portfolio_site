@@ -17,8 +17,7 @@
 <body>
     <header>
         <a href="/">Home</a>
-        <a href="/hobbies">All hobbies</a>
-        <a href="/contact">Contact</a>
+        <a href="/projects">Projects</a>
         {% if user.is_authenticated %}
         <a href='/log_out'>Log out</a>
         {% else %}
@@ -30,24 +29,6 @@
 
     <div id="content">
         {% block content %}
-
-
-        <div id='biography'>
-            <h1>Harelik<br>Pavel</h1>
-            <h3>Student<br> 17 years old, Gdańsk</h3>
-        </div>
-
-        <img src="{% static 'img/avatar.jpg' %}" alt="">
-        {{ user }}
-
-        <div id="hobbies">
-            <h2>My Hobbies</h2>
-            <div class="content">
-                <p><a href="./hobbies#crafting">Crafting out of wood</a></p>
-                <p><a href="./hobbies#coding">Coding</a></p>
-                <p><a href="./hobbies#sport">Playing sports</a></p>
-            </div>
-        </div>
         {% endblock %}
     </div>
 
