@@ -13,9 +13,10 @@ input {
     border: #ccc;
     font-size: 22px;
     font-family: 'Gilroy-Medium';
+    margin: 10px;
 }
 
-input[class=button] {
+input[type=submit] {
     transition-duration: 0.3s;
     height: 40px;
     width: 120px;
@@ -24,23 +25,35 @@ input[class=button] {
     margin-right: 30px;
     font-size: 15px;
     font-family: 'Gilroy-Medium';
+    display: block;
 }
 
 input:hover {
     background-color: #ccc;
 }
 
+p a {
+    font-family: 'Gilroy-Medium';
+    font-size: 22px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #828282;
+}
 
-#galery {
+p a:hover {
+    color: #000000;
+}
+
+label {
+    margin-top: 20px;
+    font-family: 'Gilroy-Medium';
+    font-size: 22px;
+    line-height: 30px;
     display: flex;
 }
 
-#user_img {
-    text-align: center;
-    margin-inline: 20px;
-}
-
-#user_img img {
-    max-width: 250px;
-    max-height: 125px;
+info {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    display: flex;
 }

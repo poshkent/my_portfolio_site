@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Account settings{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/forms.css' %}">
+{% endblock %}
+
+
+{% block content %}
+{{ us }}
+{% if user.is_authenticated %}
+<h2>Logged in as {{ user.username }}</h2>
+<form method="post">
+    {% csrf_token %}
+    <label for="first_name">First_name</label>
+    <input value="{{ user.first_name }}" type="text" name="first_name" id="first_name">
+    <br>
+    <label for="last_name">Last_name</label>
+    <input value="{{ user.last_name }}" type="text" name="last_name" id="last_name">
+    <br>
+    <label for="email">Email</label>
+    <input value="{{ user.email }}" type="text" name="email" id="email">
+
+    <input type="submit" value="Update">
+</form>
+<label>Date of join:</label>
+<info>{{ user.date_joined }}</info>
+<br>
+<label>Date of last login:</label>
+<info>{{ user.last_login }}</info>
+<br>
+<label>Is user active:</label>
+<info>{{ user.is_active }}</info>
+<br>
+<label>Is user is stuff:</label>
+<info>{{ user.is_staff }}</info>
+<br>
+<label>Is user is superuser</label>
+<info>{{ user.is_superuser }}</info>
+<br>
+<label>Groups of user:</label>
+<info>{{ user.groups }}</info>
+<br>
+<label>Permissions of user:</label>
+<info>{{ user.user_permissions }}</info>
+<br>
+
+{% else %}
+<h2>Log in first</h2>
+{% endif %}
+{% endblock %}
