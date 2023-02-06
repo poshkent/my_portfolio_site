@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 from portfolio import views
 from django.contrib import admin
 
@@ -8,4 +8,5 @@ urlpatterns = [
     path('hobbies/', views.pictures, name='pictures'),
     path('projects/', views.projects, name='projects'),
     path('projects/<int:id>/', views.details, name='details'),
+    path('auth/', include('django.contrib.auth.urls')),
 ]
