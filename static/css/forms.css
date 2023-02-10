@@ -32,7 +32,7 @@ input:hover {
     background-color: #ccc;
 }
 
-p a {
+a {
     font-family: 'Gilroy-Medium';
     font-size: 22px;
     line-height: 30px;
@@ -40,7 +40,7 @@ p a {
     color: #828282;
 }
 
-p a:hover {
+a:hover {
     color: #000000;
 }
 
@@ -56,4 +56,11 @@ info {
     font-family: 'Gilroy-Medium';
     font-size: 18px;
     display: flex;
+}
+
+.user {
+    font-family: 'Gilroy-Medium';
+    font-size: 22px;
+    display: flex;
+    margin-left: 10px;
 }

@@ -52,3 +52,20 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #ccc;
 }
+
+a {
+    font-family: 'Gilroy-Bold';
+    margin-top: 20px;
+    font-size: 22px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #828282;
+}
+
+a:hover {
+    color: #000000;
+}
+
+#back {
+    display: block;
+}

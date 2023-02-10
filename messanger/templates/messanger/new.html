@@ -6,10 +6,44 @@
 {% endblock %}
 
 {% block content %}
-    <h2> Start new conversation </h2>
-    <form method="post">
-        {% csrf_token %}
-        <label for="username">Type username of your companion</label>
-        <input type="text" name="username">
-        <input type="submit" value="Create">
+<h2> Start new conversation </h2>
+<form method="post">
+    {% csrf_token %}
+    <label for="username">Type username of your companion</label>
+    <input autocomplete="off" id="username" type="text" name="username">
+    <div id="users"></div>
+    <input type="submit" value="Create">
+</form>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        // отслеживаем событие отправки формы
+        $('#username').keyup(function () {
+            // создаем AJAX-вызов
+            $.ajax({
+                data: $(this).serialize(), // получаяем данные формы
+                url: "{% url 'get_users' %}",
+                // если успешно, то
+                success: function (response) {
+                    users_div = document.getElementById('users')
+                    users_div.innerHTML = ''
+                    for (let i = 0; i < response.length; i++) {
+                        users_div.innerHTML += '<p class="user">' + response[i] + '</p>'
+                    }
+                },
+                // если ошибка, то
+                error: function (response) {
+                    // предупредим об ошибке
+                    console.log(response.responseJSON.errors)
+                }
+            });
+            return false;
+        });
+    })
+</script>
+
 {% endblock %}

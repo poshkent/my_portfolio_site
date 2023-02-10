@@ -20,10 +20,12 @@ from django.contrib.auth.views import LogoutView
 from django.urls import path, include
 from . import views
 
+
 urlpatterns = [
     path("", views.home, name="home"),
     path('new/', views.new, name='new'),
     path('conversation/<int:conversation_id>/', views.conversation, name='conversation'),
+    path('get_users/', views.get_users, name='get_users')
 ]
 
 

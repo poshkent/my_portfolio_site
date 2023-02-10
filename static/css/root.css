@@ -53,3 +53,15 @@ img {
 #content p {
 	margin-top: 50px;
 }
+
+#chat_ref {
+	font-family: 'Gilroy-Bold';
+	font-size: 25px;
+	color: #828282;
+	line-height: 30px;
+	text-decoration: none;
+}
+
+#chat_ref:hover {
+	color: black;
+}

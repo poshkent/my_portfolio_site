@@ -40,6 +40,11 @@
                 You are welcome!
             </h2>
         </div>
+        <form id="chat_me" method="post" action="/messanger/new/">
+            {% csrf_token %}
+            <a id="chat_ref" href="javascript:{}" onclick="document.getElementById('chat_me').submit();">Contact to me using this site</a>
+            <input id="username" type="hidden" value = "poshkent" name="username">
+        </form>
         <div id="logo">
             <a href="https://t.me/greedann" target="_blank"><img src="{% static 'img/telegram.png' %}" alt=""></a>
             <a href="https://www.instagram.com/greedann/" target="_blank"><img src="{% static 'img/instagram.png' %}"
