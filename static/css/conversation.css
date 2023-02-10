@@ -1,0 +1,54 @@
+#my {
+    display: flex;
+    justify-content: end;
+}
+
+.message {
+    background-color: #b8b8b8;
+    padding: 10px;
+    margin: 10px;
+    width: max-content;
+    border-radius: 10px;
+}
+
+
+h7 {
+    font-family: 'Gilroy-Bold';
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left;
+}
+
+#content {
+    width: 60%;
+    margin: 0 auto;
+}
+
+p {
+    font-family: 'Gilroy-Medium';
+}
+
+input[type=text]{
+    width: 85%;
+    height: 40px;
+    font-size: 18px;
+    font-family: 'Gilroy-Medium';
+    margin: 10px;
+    border-radius: 10px;
+}
+
+input[type=submit] {
+    transition-duration: 0.3s;
+    height: 40px;
+    width: 10%;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid #ccc;
+    margin-right: 30px;
+    font-size: 15px;
+    font-family: 'Gilroy-Medium';
+}
+
+input[type=submit]:hover {
+    background-color: #ccc;
+}

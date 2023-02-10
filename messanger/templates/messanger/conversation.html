@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Messanger{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/conversation.css' %}">
+{% endblock %}
+
+
+{% block content %}
+<h2>{{ conversation.name }}</h2>
+
+{% for message in messages %}
+        {% if message.author == request.user.username%} 
+        <div class="message_container" id = "my">
+        {% else %}
+        <div class="message_container" id = "other">
+        {% endif %}
+        <div class="message">
+        <h7>{{message.author}}</h7>
+        <br>
+        <p>{{message.text}}</p>
+        </div>
+    </div>
+{% endfor %}
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="text">
+    <input type="submit" value="Send">
+</form>
+{% endblock %}

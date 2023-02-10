@@ -1,0 +1,36 @@
+.conversation {
+    text-align: center;
+    background-color: #f6f6f6;
+    padding: 50px 0;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+a {
+    font-family: 'Gilroy-Bold';
+	font-size: 25px;
+	color: #828282;
+	line-height: 30px;
+	text-align: center;
+	text-decoration: none;
+}
+
+a:hover {
+	font-family: 'Gilroy-Bold';
+	color: black;
+}
+
+p {
+    margin-inline: 10%;
+    text-align: left;
+    font-family: 'Gilroy-Medium';
+}
+
+h3 {
+    margin-inline: 10%;
+    font-family: 'Gilroy-Bold';
+    font-size: 30px;
+    color: #828282;
+    line-height: 30px;
+    text-align: left;
+}

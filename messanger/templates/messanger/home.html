@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Messanger{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/messanger.css' %}">
+{% endblock %}
+
+
+{% block content %}
+<h2> Conversations </h2>
+<div id="new_conversation">
+    <a href="{% url 'new' %}">New conversation</a>
+</div>
+{% for conv in conversations %}
+<div class="conversation">
+    <a href="{% url 'conversation' conversation_id=conv.id %}">{{ conv.name }}</a>
+    <p>{{ conv.last_message }}</p>
+</div>
+{% endfor %}
+{% endblock %}

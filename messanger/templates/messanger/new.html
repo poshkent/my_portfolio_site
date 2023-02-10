@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Start new conversation{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/forms.css' %}">
+{% endblock %}
+
+{% block content %}
+    <h2> Start new conversation </h2>
+    <form method="post">
+        {% csrf_token %}
+        <label for="username">Type username of your companion</label>
+        <input type="text" name="username">
+        <input type="submit" value="Create">
+{% endblock %}
