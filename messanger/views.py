@@ -18,17 +18,26 @@ def home(request):
 def conversation(request, conversation_id):
     if (request.user.is_anonymous):
         return redirect('/auth/login/?next=/messanger/')
-    if request.method == 'POST':
+    if request.method == 'POST' and request.POST['text']:
         user = User.objects.get(username=request.user)
         conversation = Conversation.objects.get(id=conversation_id)
-        message = Message.objects.create(
+        Message.objects.create(
             conversation=conversation, author=user.username, text=request.POST['text'])
         return redirect('/messanger/conversation/' + str(conversation.id))
-    user = User.objects.get(username=request.user)
-    conversation = Conversation.objects.get(id=conversation_id)
-    messages = conversation.messages.all()
-    print(messages)
-    return render(request, 'messanger/conversation.html', {'conversation': conversation, 'messages': messages})
+
+    try:
+        conversation = Conversation.objects.get(id=conversation_id)
+    except Conversation.DoesNotExist:
+        return redirect('/messanger/')
+    if (request.user.username in [conversation.user1, conversation.user2]):
+        messages = list(conversation.messages.all())
+    else:
+        return render(request, 'messanger/conversation.html', {'error': 'You are not a member of this conversation'})
+    if messages:
+        last_message_id = messages[-1].id
+    else:
+        last_message_id = 0
+    return render(request, 'messanger/conversation.html', {'conversation': conversation, 'messages': messages, 'last_message_id': last_message_id})
 
 
 def new(request):
@@ -36,9 +45,15 @@ def new(request):
         return redirect('/auth/login/?next=/messanger/')
     if request.method == 'POST':
         user = User.objects.get(username=request.user)
-        user2 = User.objects.get(username=request.POST['username'])
-        conversation = Conversation.objects.create(
-            user1=user, user2=user2, name=user.username + " " + user2.username)
+        try:
+            user2 = User.objects.get(username=request.POST['username'])
+            conversation = Conversation.objects.get(
+                Q(user1=user, user2=user2) | Q(user1=user2, user2=user))
+        except User.DoesNotExist:
+            return render(request, 'messanger/new.html', {'error': 'User not found'})
+        except Conversation.DoesNotExist:
+            conversation = Conversation.objects.create(
+                user1=user, user2=user2, name=user.username + " " + user2.username)
         return redirect('/messanger/conversation/' + str(conversation.id))
     return render(request, 'messanger/new.html')
 
@@ -57,8 +72,25 @@ def get_users(request):
                     results.append(user.username)
             else:
                 results = ['No users found']
-        else :
+        else:
             results = ['Type something']
         return JsonResponse(results, safe=False)
     else:
         return render(request, 'messanger/new.html')
+
+
+def get_last_message_id(request):
+    if (request.user.is_anonymous):
+        return redirect('/auth/login/?next=/messanger/')
+    if request.headers.get('x-requested-with') == 'XMLHttpRequest':
+        conversation_id = request.POST.get('conversation_id', None)
+        print(conversation_id)
+        conversation = Conversation.objects.get(id=conversation_id)
+        messages = list(conversation.messages.all())
+        if messages:
+            last_message_id = messages[-1].id
+        else:
+            last_message_id = 0
+        return JsonResponse(last_message_id, safe=False)
+    else:
+        return render(request, 'messanger/conversation.html')

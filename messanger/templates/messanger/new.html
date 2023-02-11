@@ -6,7 +6,9 @@
 {% endblock %}
 
 {% block content %}
+<a id="back" href="/messanger">Back</a>
 <h2> Start new conversation </h2>
+<h2 class="error">{{ error }}</h2>
 <form method="post">
     {% csrf_token %}
     <label for="username">Type username of your companion</label>

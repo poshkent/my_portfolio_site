@@ -55,6 +55,10 @@ header {
 
 }
 
+.error {
+	color: red;
+}
+
 #content {
 	flex: auto;
 	width: 80%;

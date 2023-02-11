@@ -9,24 +9,54 @@
 {% block content %}
 <a id="back" href="/messanger">Back</a>
 <h2>{{ conversation.name }}</h2>
+<h2 class="error">{{ error }}</h2>
 
 
 {% for message in messages %}
-        {% if message.author == request.user.username%} 
-        <div class="message_container" id = "my">
-        {% else %}
-        <div class="message_container" id = "other">
+{% if message.author == request.user.username%}
+<div class="message_container" id="my">
+    {% else %}
+    <div class="message_container" id="other">
         {% endif %}
         <div class="message">
-        <h7>{{message.author}}</h7>
-        <br>
-        <p>{{message.text}}</p>
+            <h7>{{message.author}}</h7>
+            <br>
+            <p>{{message.text}}</p>
+            <p>{{message.created}}</p>
         </div>
     </div>
-{% endfor %}
-<form method="post">
-    {% csrf_token %}
-    <input autocomplete="off" type="text" name="text">
-    <input type="submit" value="Send">
-</form>
-{% endblock %}
+    {% endfor %}
+    <input type="hidden" id="last_message" value="{{last_message_id}}">
+    <form method="post"id = 'last_msg'>
+        {% csrf_token %}
+        <input type="hidden" name="conversation_id" value="{{ conversation.id }}">
+    </form>
+    {% if not error %}
+    <form method="post" id="new_message">
+        {% csrf_token %}
+        <input autocomplete="off" type="text" name="text">
+        <input type="submit" value="Send">
+    </form>
+    {% endif %}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        function check_updates(last_message_id, conversation_id) {
+            $.ajax({
+                url: "{% url 'get_last_message_id' %}",
+                method: 'post',
+                data: $('#last_msg').serialize(),
+                success: function (data) {
+                    if (data != last_message_id)
+                        location.reload()
+                }
+            });
+        }
+        $(document).ready(function () {
+            var last_message_id = $('#last_message').val()
+            var conversation_id = "{{ conversation.id }}"
+            setInterval(check_updates, 2000, last_message_id, conversation_id)
+        });
+    </script>
+    {% endblock %}

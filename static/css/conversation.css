@@ -21,7 +21,15 @@ h7 {
 
 #content {
     width: 60%;
-    margin: 0 auto;
+    margin-left: 20%;
+}
+
+@media only screen and (max-width: 900px)
+{
+    #content {
+        width: 90%;
+        margin-left: 5%;
+    }
 }
 
 p {
@@ -38,9 +46,9 @@ input[type=text]{
 }
 
 input[type=submit] {
-    transition-duration: 0.3s;
     height: 40px;
-    width: 10%;
+    margin-top: 10px;
+    transition-duration: 0.3s;
     border-radius: 10px;
     background-color: white;
     border: 2px solid #ccc;
@@ -68,4 +76,9 @@ a:hover {
 
 #back {
     display: block;
+}
+
+#new_message {
+    display: flex;
+    justify-content: space-between;
 }
