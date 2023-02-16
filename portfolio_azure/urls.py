@@ -28,4 +28,3 @@ urlpatterns = [
     path('messanger/', include('messanger.urls')),
 ]
 
-

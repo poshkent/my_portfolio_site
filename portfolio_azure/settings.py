@@ -119,6 +119,21 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
+LANGUAGES = (
+    ('ru', 'Russian'),
+    ('en', 'English'),
+)
+
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale'),
+)
+
+MIDDLEWARE_CLASSES = (
+   # ...
+   'django.middleware.locale.LocaleMiddleware',
+   # ...
+)
+
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
