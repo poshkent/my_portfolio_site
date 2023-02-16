@@ -1,20 +1,21 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}Start new conversation{% endblock %}
+{% load i18n %}
+{% block title %}{% trans 'Start new conversation' %}{% endblock %}
 {% block css %}
 <link rel="stylesheet" href="{% static 'css/forms.css' %}">
 {% endblock %}
 
 {% block content %}
-<a id="back" href="/messanger">Back</a>
-<h2> Start new conversation </h2>
+<a id="back" href="/messanger">{% trans 'Back' %}</a>
+<h2> {% trans 'Start new conversation' %} </h2>
 <h2 class="error">{{ error }}</h2>
 <form method="post">
     {% csrf_token %}
-    <label for="username">Type username of your companion</label>
+    <label for="username">{% trans 'Type username of your companion' %}</label>
     <input autocomplete="off" id="username" type="text" name="username">
     <div id="users"></div>
-    <input type="submit" value="Create">
+    <input type="submit" value="{% trans 'Create' %}">
 </form>
 
 

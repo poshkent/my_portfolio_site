@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-16 17:46+0100\n"
+"PO-Revision-Date: 2023-02-16 17:52+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#: .\messanger\templates\base.html:21 .\users\templates\base.html:21
+msgid "Home"
+msgstr "Главная"
+
+#: .\messanger\templates\base.html:22 .\users\templates\base.html:22
+msgid "Projects"
+msgstr "Проекты"
+
+#: .\messanger\templates\base.html:24 .\users\templates\base.html:24
+msgid "My account"
+msgstr "Мой аккаунт"
+
+#: .\messanger\templates\base.html:25 .\users\templates\base.html:25
+msgid "Log out"
+msgstr "Выйти"
+
+#: .\messanger\templates\base.html:27 .\users\templates\base.html:27
+msgid "Log in"
+msgstr "Войти"
+
+#: .\messanger\templates\base.html:28 .\users\templates\base.html:28
+msgid "Sign up"
+msgstr "Регистрация"
+
+#: .\messanger\templates\base.html:41 .\users\templates\base.html:41
+msgid "Want to know more or just chat?"
+msgstr "Хотите узнать больше или просто пообщаться?"
+
+#: .\messanger\templates\base.html:42 .\users\templates\base.html:42
+msgid "You are welcome!"
+msgstr "Пожалуйста!"
+
+#: .\messanger\templates\base.html:47 .\users\templates\base.html:47
+msgid "Contact to me using this site"
+msgstr "Свяжитесь со мной с помощью этого сайта"
+
+#: .\messanger\templates\messanger\conversation.html:4
+#: .\messanger\templates\messanger\home.html:4
+msgid "Messanger"
+msgstr "Мессенджер"
+
+#: .\messanger\templates\messanger\conversation.html:12
+#: .\messanger\templates\messanger\new.html:10
+msgid "Back"
+msgstr "Назад"
+
+#: .\messanger\templates\messanger\conversation.html:40
+msgid "Send"
+msgstr "Отправить"
+
+#: .\messanger\templates\messanger\home.html:11
+msgid "Conversations"
+msgstr "Диалоги"
+
+#: .\messanger\templates\messanger\home.html:13
+msgid "New conversation"
+msgstr "Новый диалог"
+
+#: .\messanger\templates\messanger\new.html:4
+#: .\messanger\templates\messanger\new.html:11
+msgid "Start new conversation"
+msgstr "Начать новый диалог"
+
+#: .\messanger\templates\messanger\new.html:15
+msgid "Type username of your companion"
+msgstr "Введите имя пользователя вашего собеседника"
+
+#: .\messanger\templates\messanger\new.html:18
+msgid "Create"
+msgstr "Создать"

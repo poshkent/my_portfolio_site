@@ -1,24 +1,30 @@
 {% extends "portfolio/base.html" %}
 {% load static %}
+{% load i18n %}
 {% block title %}Pavel Harelik{% endblock %}
 {% block css %}
 <link rel="stylesheet" href="{% static 'css/root.css' %}">
 {% endblock %}
 {% block content %}
 <div id='biography'>
-	<h1>Harelik<br>Pavel</h1>
-	<h3>Student<br> 17 years old, Gdańsk</h3>
+	<h1>{% trans 'Harelik' %}<br>{% trans 'Pavel' %}</h1>
+	<h3>{% trans 'Student' %}<br> {% trans '17 years old, Gdańsk' %}</h3>
 </div>
 
 <img src="{% static 'img/avatar.jpg' %}" alt="">
+
 <div id="hobbies">
-	<h2>My Skills</h2>
+
+	{% get_current_language as CURRENT_LANGUAGE %}
+
+
+	<h2>{% trans 'My Skills' %}</h2>
 	<div class="content">
-		<p><a href="/projects?skill=python">Python</a></p>
-		<p><a href="/projects?skill=django">Django</a></p>
-		<p><a href="/projects?skill=c++">C++</a></p>
-		<p><a href="/projects?skill=php">PHP</a></p>
-		<p><a href="/projects?skill=html">HTML, CSS, JS</a></p>
+		<p><a href="/{{ CURRENT_LANGUAGE }}/projects?skill=python">Python</a></p>
+		<p><a href="/{{ CURRENT_LANGUAGE }}/projects?skill=django">Django</a></p>
+		<p><a href="/{{ CURRENT_LANGUAGE }}/projects?skill=c++">C++</a></p>
+		<p><a href="/{{ CURRENT_LANGUAGE }}/projects?skill=php">PHP</a></p>
+		<p><a href="/{{ CURRENT_LANGUAGE }}/projects?skill=html">HTML, CSS, JS</a></p>
 	</div>
 </div>
 {% endblock %}

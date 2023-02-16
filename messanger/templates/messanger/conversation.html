@@ -1,13 +1,15 @@
 {% extends 'base.html' %}
+{% load i18n %}
 {% load static %}
-{% block title %}Messanger{% endblock %}
+{% block title %}{% trans 'Messanger' %}{% endblock %}
 {% block css %}
 <link rel="stylesheet" href="{% static 'css/conversation.css' %}">
 {% endblock %}
 
 
 {% block content %}
-<a id="back" href="/messanger">Back</a>
+{% get_current_language as CURRENT_LANGUAGE %}
+<a id="back" href="/{{ CURRENT_LANGUAGE }}/messanger">{% trans 'Back' %}</a>
 <h2>{{ conversation.name }}</h2>
 <h2 class="error">{{ error }}</h2>
 
@@ -27,7 +29,7 @@
     </div>
     {% endfor %}
     <input type="hidden" id="last_message" value="{{last_message_id}}">
-    <form method="post"id = 'last_msg'>
+    <form method="post" action = "/{{ CURRENT_LANGUAGE }}/messanger/conversation/{{ conversation.id }}" id = 'last_msg'>
         {% csrf_token %}
         <input type="hidden" name="conversation_id" value="{{ conversation.id }}">
     </form>
@@ -35,7 +37,7 @@
     <form method="post" id="new_message">
         {% csrf_token %}
         <input autocomplete="off" type="text" name="text">
-        <input type="submit" value="Send">
+        <input type="submit" value="{% trans 'Send' %}">
     </form>
     {% endif %}
 

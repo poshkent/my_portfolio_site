@@ -23,7 +23,11 @@ def conversation(request, conversation_id):
         conversation = Conversation.objects.get(id=conversation_id)
         Message.objects.create(
             conversation=conversation, author=user.username, text=request.POST['text'])
-        return redirect('/messanger/conversation/' + str(conversation.id))
+
+        lang_ref = request.META.get('HTTP_REFERER').split('/')[-5]
+        print(lang_ref)
+        return redirect(f'/{lang_ref}/messanger/conversation/' + str(conversation.id))
+
 
     try:
         conversation = Conversation.objects.get(id=conversation_id)

@@ -18,13 +18,17 @@ from django.urls import include, path
 from django.views.generic.base import RedirectView
 from django.contrib.staticfiles.storage import staticfiles_storage
 from django.contrib.auth import views as auth_views
+from django.conf.urls.i18n import i18n_patterns
+from django.utils.translation import gettext_lazy as _
 
-urlpatterns = [
+urlpatterns = i18n_patterns(
     path('auth/', include('users.urls', namespace='users')),
     path('', include('portfolio.urls')),
     path('messanger/', include('messanger.urls')),
     path("favicon.ico", RedirectView.as_view(url=staticfiles_storage.url("favicon.ico")),),
-    path('admin/', admin.site.urls),
+    path(_('admin/'), admin.site.urls),
     path('messanger/', include('messanger.urls')),
-]
+    path('rosetta/', include('rosetta.urls')),
+)
+
 
