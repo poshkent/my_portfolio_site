@@ -1,14 +1,15 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
-{% block title %}Sign up{% endblock %}
+{% block title %}{% trans 'Sign up' %}{% endblock %}
 {% block css %}
     <link rel="stylesheet" href="{% static 'css/forms.css' %}">
 {% endblock %}
 
 
 {% block content %}
-<h2>Register</h2>
+<h2>{% trans 'Register' %}</h2>
 
 <form method="post">
     {% csrf_token %}
@@ -16,6 +17,6 @@
     <input type="submit" value="Register">
 </form>
 
-<p><a href="/auth/login" >Log in</a></p>
-<p><a href="/">Back to Home</a></p>
+<p><a href="{% url 'login'%}" >{% trans 'Log in' %}</a></p>
+<p><a href="{% url 'index' %}">{% trans 'Home' %}</a></p>
 {% endblock %}

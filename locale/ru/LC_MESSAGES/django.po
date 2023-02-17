@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-16 17:46+0100\n"
-"PO-Revision-Date: 2023-02-16 17:52+0100\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2023-02-17 13:29+0100\n"
+"PO-Revision-Date: 2023-02-17 13:44+0100\n"
+"Last-Translator: Pavel Harelik <pavelgorelik25@gmail.com>\n"
 "Language-Team: \n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -19,40 +19,55 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 "X-Generator: Poedit 3.2.2\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: .\messanger\templates\base.html:21 .\users\templates\base.html:21
+#: .\messanger\templates\base.html:21
+#: .\portfolio\templates\portfolio\base.html:21 .\users\templates\base.html:21
+#: .\users\templates\registration\signup.html:21
 msgid "Home"
-msgstr "Главная"
+msgstr "Домой"
 
-#: .\messanger\templates\base.html:22 .\users\templates\base.html:22
+#: .\messanger\templates\base.html:22
+#: .\portfolio\templates\portfolio\base.html:22 .\users\templates\base.html:22
 msgid "Projects"
 msgstr "Проекты"
 
-#: .\messanger\templates\base.html:24 .\users\templates\base.html:24
+#: .\messanger\templates\base.html:24
+#: .\portfolio\templates\portfolio\base.html:24 .\users\templates\base.html:24
 msgid "My account"
 msgstr "Мой аккаунт"
 
-#: .\messanger\templates\base.html:25 .\users\templates\base.html:25
+#: .\messanger\templates\base.html:25
+#: .\portfolio\templates\portfolio\base.html:25 .\users\templates\base.html:25
 msgid "Log out"
 msgstr "Выйти"
 
-#: .\messanger\templates\base.html:27 .\users\templates\base.html:27
+#: .\messanger\templates\base.html:27
+#: .\portfolio\templates\portfolio\base.html:27 .\users\templates\base.html:27
+#: .\users\templates\registration\login.html:5
+#: .\users\templates\registration\login.html:41
+#: .\users\templates\registration\signup.html:20
 msgid "Log in"
 msgstr "Войти"
 
-#: .\messanger\templates\base.html:28 .\users\templates\base.html:28
+#: .\messanger\templates\base.html:28
+#: .\portfolio\templates\portfolio\base.html:28 .\users\templates\base.html:28
+#: .\users\templates\registration\signup.html:5
 msgid "Sign up"
 msgstr "Регистрация"
 
-#: .\messanger\templates\base.html:41 .\users\templates\base.html:41
+#: .\messanger\templates\base.html:41
+#: .\portfolio\templates\portfolio\base.html:41 .\users\templates\base.html:41
 msgid "Want to know more or just chat?"
 msgstr "Хотите узнать больше или просто пообщаться?"
 
-#: .\messanger\templates\base.html:42 .\users\templates\base.html:42
+#: .\messanger\templates\base.html:42
+#: .\portfolio\templates\portfolio\base.html:42 .\users\templates\base.html:42
 msgid "You are welcome!"
 msgstr "Пожалуйста!"
 
-#: .\messanger\templates\base.html:47 .\users\templates\base.html:47
+#: .\messanger\templates\base.html:47
+#: .\portfolio\templates\portfolio\base.html:47 .\users\templates\base.html:47
 msgid "Contact to me using this site"
 msgstr "Свяжитесь со мной с помощью этого сайта"
 
@@ -61,12 +76,12 @@ msgstr "Свяжитесь со мной с помощью этого сайта
 msgid "Messanger"
 msgstr "Мессенджер"
 
-#: .\messanger\templates\messanger\conversation.html:12
+#: .\messanger\templates\messanger\conversation.html:11
 #: .\messanger\templates\messanger\new.html:10
 msgid "Back"
 msgstr "Назад"
 
-#: .\messanger\templates\messanger\conversation.html:40
+#: .\messanger\templates\messanger\conversation.html:39
 msgid "Send"
 msgstr "Отправить"
 
@@ -90,3 +105,123 @@ msgstr "Введите имя пользователя вашего собесе
 #: .\messanger\templates\messanger\new.html:18
 msgid "Create"
 msgstr "Создать"
+
+#: .\portfolio\templates\portfolio\details.html:12
+msgid "Description"
+msgstr "Описание"
+
+#: .\portfolio\templates\portfolio\details.html:14
+msgid "Used skills for this project:"
+msgstr "Используемые навыки для этого проекта:"
+
+#: .\portfolio\templates\portfolio\details.html:16
+msgid "Link for GitHub"
+msgstr "Ссылка на GitHub"
+
+#: .\portfolio\templates\portfolio\main.html:4
+msgid "Pavel Harelik"
+msgstr "Горелик Павел"
+
+#: .\portfolio\templates\portfolio\main.html:10
+msgid "Harelik"
+msgstr "Горелик"
+
+#: .\portfolio\templates\portfolio\main.html:10
+msgid "Pavel"
+msgstr "Павел"
+
+#: .\portfolio\templates\portfolio\main.html:11
+msgid "Student"
+msgstr "Студент"
+
+#: .\portfolio\templates\portfolio\main.html:11
+msgid "17 years old, Gdańsk"
+msgstr "17 лет, Гданьск"
+
+#: .\portfolio\templates\portfolio\main.html:17
+msgid "My Skills"
+msgstr "Мои навыки"
+
+#: .\portfolio\templates\portfolio\projects.html:18
+msgid "There is no projects yet"
+msgstr "Нет проектов"
+
+#: .\portfolio_azure\settings.py:128
+msgid "English"
+msgstr "Английский"
+
+#: .\portfolio_azure\settings.py:129
+msgid "Russian"
+msgstr "Русский"
+
+#: .\portfolio_azure\settings.py:130
+msgid "Polish"
+msgstr "Польский"
+
+#: .\portfolio_azure\urls.py:29
+msgid "admin/"
+msgstr ""
+
+#: .\users\templates\registration\login.html:14
+msgid "Your username and password didn't match. Please try again."
+msgstr "Ваше имя пользователя или пароль не подходят. Попробуйте снова."
+
+#: .\users\templates\registration\login.html:22
+msgid "Please login to see this page."
+msgstr "Войдите в аккаунт чтобы увидеть эту страницу."
+
+#: .\users\templates\registration\login.html:46
+msgid "Lost password?"
+msgstr "Забыли пароль?"
+
+#: .\users\templates\registration\signup.html:12
+msgid "Register"
+msgstr "Регистрация"
+
+#: .\users\templates\users\account.html:5
+msgid "Account settings"
+msgstr "Настройки аккаунта"
+
+#: .\users\templates\users\account.html:14
+msgid "Logged in as"
+msgstr "Выполнен вход как"
+
+#: .\users\templates\users\account.html:17
+msgid "First name"
+msgstr "Имя"
+
+#: .\users\templates\users\account.html:20
+msgid "Last name"
+msgstr "Фамилия"
+
+#: .\users\templates\users\account.html:26
+msgid "Save"
+msgstr "Сохранить"
+
+#: .\users\templates\users\account.html:29
+msgid "Go to messanger application"
+msgstr "Перейти в мессенджер"
+
+#: .\users\templates\users\account.html:35
+msgid "Select your language"
+msgstr "Выберите ваш язык"
+
+#: .\users\templates\users\account.html:71
+msgid "Log in first"
+msgstr "Сначала войдите в аккаунт"
+
+#, fuzzy
+#~| msgid "Last name"
+#~ msgid "name"
+#~ msgstr "Фамилия"
+
+#, fuzzy
+#~| msgid "My Skills"
+#~ msgid "skills"
+#~ msgstr "Мои навыки"
+
+#~ msgid "description"
+#~ msgstr "Описание"
+
+#~ msgid "Back to Home"
+#~ msgstr "Домой"

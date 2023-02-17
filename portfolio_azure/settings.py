@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'users',
     'messanger',
     'rosetta',
+    'parler',
 ]
 
 MIDDLEWARE = [
@@ -126,7 +127,20 @@ LANGUAGE_CODE = 'en-us'
 LANGUAGES = (
     ('en', _('English')),
     ('ru', _('Russian')),
+    ('pl', _('Polish')),
 )
+
+PARLER_LANGUAGES = {
+    None: (
+        {'code': 'en',}, # English
+        {'code': 'ru',}, # Russian
+        {'code': 'pl',}, # Polish
+    ),
+    'default': {
+        'fallbacks': ['en'],
+        'hide_untranslated': False,
+    }
+}
 
 
 TIME_ZONE = 'UTC'

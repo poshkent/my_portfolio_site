@@ -22,11 +22,11 @@ from . import views
 
 
 urlpatterns = [
-    path("", views.home, name="home"),
+    path("", views.home, name="messanger_home"),
     path('new/', views.new, name='new'),
     path('conversation/<int:conversation_id>/', views.conversation, name='conversation'),
     path('get_users/', views.get_users, name='get_users'),
-    path('get_last_message', views.get_last_message_id, name='get_last_message_id'),
+    path('get_last_message/', views.get_last_message_id, name='get_last_message_id'),
 ]
 
 

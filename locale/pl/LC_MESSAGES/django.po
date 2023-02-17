@@ -3,41 +3,43 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-17 13:29+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2023-02-17 13:30+0100\n"
+"PO-Revision-Date: 2023-02-17 13:37+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
+"(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
+"n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: .\messanger\templates\base.html:21
 #: .\portfolio\templates\portfolio\base.html:21 .\users\templates\base.html:21
 #: .\users\templates\registration\signup.html:21
 msgid "Home"
-msgstr ""
+msgstr "Strona główna"
 
 #: .\messanger\templates\base.html:22
 #: .\portfolio\templates\portfolio\base.html:22 .\users\templates\base.html:22
 msgid "Projects"
-msgstr ""
+msgstr "Projekty"
 
 #: .\messanger\templates\base.html:24
 #: .\portfolio\templates\portfolio\base.html:24 .\users\templates\base.html:24
 msgid "My account"
-msgstr ""
+msgstr "Moje konto"
 
 #: .\messanger\templates\base.html:25
 #: .\portfolio\templates\portfolio\base.html:25 .\users\templates\base.html:25
 msgid "Log out"
-msgstr ""
+msgstr "Wyloguj się"
 
 #: .\messanger\templates\base.html:27
 #: .\portfolio\templates\portfolio\base.html:27 .\users\templates\base.html:27
@@ -45,75 +47,75 @@ msgstr ""
 #: .\users\templates\registration\login.html:41
 #: .\users\templates\registration\signup.html:20
 msgid "Log in"
-msgstr ""
+msgstr "Zaloguj się"
 
 #: .\messanger\templates\base.html:28
 #: .\portfolio\templates\portfolio\base.html:28 .\users\templates\base.html:28
 #: .\users\templates\registration\signup.html:5
 msgid "Sign up"
-msgstr ""
+msgstr "Zarejestruj się"
 
 #: .\messanger\templates\base.html:41
 #: .\portfolio\templates\portfolio\base.html:41 .\users\templates\base.html:41
 msgid "Want to know more or just chat?"
-msgstr ""
+msgstr "Chcesz wiedzieć więcej lub po prostu porozmawiać?"
 
 #: .\messanger\templates\base.html:42
 #: .\portfolio\templates\portfolio\base.html:42 .\users\templates\base.html:42
 msgid "You are welcome!"
-msgstr ""
+msgstr "Zapraszamy!"
 
 #: .\messanger\templates\base.html:47
 #: .\portfolio\templates\portfolio\base.html:47 .\users\templates\base.html:47
 msgid "Contact to me using this site"
-msgstr ""
+msgstr "Kontakt do mnie za pomocą tej strony"
 
 #: .\messanger\templates\messanger\conversation.html:4
 #: .\messanger\templates\messanger\home.html:4
 msgid "Messanger"
-msgstr ""
+msgstr "Messanger"
 
 #: .\messanger\templates\messanger\conversation.html:11
 #: .\messanger\templates\messanger\new.html:10
 msgid "Back"
-msgstr ""
+msgstr "Powróć"
 
 #: .\messanger\templates\messanger\conversation.html:39
 msgid "Send"
-msgstr ""
+msgstr "Wysłać"
 
 #: .\messanger\templates\messanger\home.html:11
 msgid "Conversations"
-msgstr ""
+msgstr "Rozmowy"
 
 #: .\messanger\templates\messanger\home.html:13
 msgid "New conversation"
-msgstr ""
+msgstr "Nowa rozmowa"
 
 #: .\messanger\templates\messanger\new.html:4
 #: .\messanger\templates\messanger\new.html:11
 msgid "Start new conversation"
-msgstr ""
+msgstr "Rozpocznij nową rozmowę"
 
 #: .\messanger\templates\messanger\new.html:15
 msgid "Type username of your companion"
-msgstr ""
+msgstr "Wpisz nazwę użytkownika swojego towarzysza"
 
 #: .\messanger\templates\messanger\new.html:18
 msgid "Create"
-msgstr ""
+msgstr "Utworzyć"
 
 #: .\portfolio\templates\portfolio\details.html:12
 msgid "Description"
-msgstr ""
+msgstr "Opis"
 
 #: .\portfolio\templates\portfolio\details.html:14
 msgid "Used skills for this project:"
-msgstr ""
+msgstr "Umiejętności wykorzystane w tym projekcie:"
 
 #: .\portfolio\templates\portfolio\details.html:16
 msgid "Link for GitHub"
-msgstr ""
+msgstr "Link do GitHuba"
 
 #: .\portfolio\templates\portfolio\main.html:4
 msgid "Pavel Harelik"
@@ -133,15 +135,15 @@ msgstr ""
 
 #: .\portfolio\templates\portfolio\main.html:11
 msgid "17 years old, Gdańsk"
-msgstr ""
+msgstr "17 lat, Gdańsk"
 
 #: .\portfolio\templates\portfolio\main.html:17
 msgid "My Skills"
-msgstr ""
+msgstr "Moje umiejętności"
 
 #: .\portfolio\templates\portfolio\projects.html:18
 msgid "There is no projects yet"
-msgstr ""
+msgstr "Nie ma jeszcze żadnych projektów"
 
 #: .\portfolio_azure\settings.py:128
 msgid "English"
@@ -161,48 +163,48 @@ msgstr ""
 
 #: .\users\templates\registration\login.html:14
 msgid "Your username and password didn't match. Please try again."
-msgstr ""
+msgstr "Twoja nazwa użytkownika i hasło nie pasują. Proszę spróbuj ponownie."
 
 #: .\users\templates\registration\login.html:22
 msgid "Please login to see this page."
-msgstr ""
+msgstr "Zaloguj się, aby zobaczyć tę stronę."
 
 #: .\users\templates\registration\login.html:46
 msgid "Lost password?"
-msgstr ""
+msgstr "Zgubiłeś hasło?"
 
 #: .\users\templates\registration\signup.html:12
 msgid "Register"
-msgstr ""
+msgstr "Zapisać się"
 
 #: .\users\templates\users\account.html:5
 msgid "Account settings"
-msgstr ""
+msgstr "Ustawienia konta"
 
 #: .\users\templates\users\account.html:14
 msgid "Logged in as"
-msgstr ""
+msgstr "Zalogowany jako"
 
 #: .\users\templates\users\account.html:17
 msgid "First name"
-msgstr ""
+msgstr "Imie"
 
 #: .\users\templates\users\account.html:20
 msgid "Last name"
-msgstr ""
+msgstr "Nazwisko"
 
 #: .\users\templates\users\account.html:26
 msgid "Save"
-msgstr ""
+msgstr "Zapisz"
 
 #: .\users\templates\users\account.html:29
 msgid "Go to messanger application"
-msgstr ""
+msgstr "Przejdź do aplikacji komunikatora"
 
 #: .\users\templates\users\account.html:35
 msgid "Select your language"
-msgstr ""
+msgstr "Wybierz swój język"
 
 #: .\users\templates\users\account.html:71
 msgid "Log in first"
-msgstr ""
+msgstr "Najpierw się zaloguj"

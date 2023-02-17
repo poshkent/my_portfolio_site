@@ -1,11 +1,12 @@
 {% extends "portfolio/base.html" %}
 {% load static %}
+{% load i18n %}
 {% block title %}My Hobbies{% endblock %}
 {% block css %}
     <link rel="stylesheet" href="{% static 'css/projects.css' %}">
 {% endblock %}
 {% block content %}
-{%if projects%}
+{% if projects %}
 {% for project in projects %}
     <div class="project">
         <a href="{% url 'details' id=project.id %}">{{ project.name }}</a>
@@ -14,6 +15,6 @@
     </div>
 {% endfor %}
 {% else %}
-    <h2>There is no projects yet</h2>
+    <h2>{% trans 'There is no projects yet' %}</h2>
 {% endif %}
 {% endblock %}

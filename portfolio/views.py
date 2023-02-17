@@ -14,7 +14,10 @@ def pictures(request):
 def projects(request):
     if 'skill' in request.GET:
         option = request.GET['skill']
-        projects = Project.objects.filter(Q(skills__icontains=option))
+        projects = Project.objects.all()
+        for proj in projects:
+            if not option.lower() in proj.skills.lower():
+                projects = projects.exclude(id=proj.id)
     else:
         projects = Project.objects.all()
     return render(request, 'portfolio/projects.html', {'projects': projects})

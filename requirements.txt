@@ -6,3 +6,4 @@ requests
 whitenoise
 Pillow
 django-rosetta
+django-parler

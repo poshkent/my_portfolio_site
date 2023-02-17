@@ -8,5 +8,4 @@ urlpatterns = [
     path('hobbies/', views.pictures, name='pictures'),
     path('projects/', views.projects, name='projects'),
     path('projects/<int:id>/', views.details, name='details'),
-    path('auth/', include('django.contrib.auth.urls')),
 ]

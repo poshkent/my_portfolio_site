@@ -22,12 +22,11 @@ from django.conf.urls.i18n import i18n_patterns
 from django.utils.translation import gettext_lazy as _
 
 urlpatterns = i18n_patterns(
-    path('auth/', include('users.urls', namespace='users')),
+    path('auth/', include('users.urls')),
     path('', include('portfolio.urls')),
     path('messanger/', include('messanger.urls')),
     path("favicon.ico", RedirectView.as_view(url=staticfiles_storage.url("favicon.ico")),),
     path(_('admin/'), admin.site.urls),
-    path('messanger/', include('messanger.urls')),
     path('rosetta/', include('rosetta.urls')),
 )
 

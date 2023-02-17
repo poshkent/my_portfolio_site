@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block content %}
-<a id="back" href="/messanger">{% trans 'Back' %}</a>
+<a id="back" href="{% url 'messanger_home' %}">{% trans 'Back' %}</a>
 <h2> {% trans 'Start new conversation' %} </h2>
 <h2 class="error">{{ error }}</h2>
 <form method="post">
