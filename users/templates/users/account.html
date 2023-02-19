@@ -37,7 +37,7 @@
         {% for language in languages %}
         <li>
             <a href="/{{ language.code }}/auth/account/" >
-                {{ language.name_local }}
+                {{ language.name_local.capitalize }}
             </a>
         </li>
         {% endfor %}

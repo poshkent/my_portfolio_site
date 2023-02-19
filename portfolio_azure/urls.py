@@ -21,6 +21,8 @@ from django.contrib.auth import views as auth_views
 from django.conf.urls.i18n import i18n_patterns
 from django.utils.translation import gettext_lazy as _
 
+handler404 = "portfolio.views.page_not_found_view"
+
 urlpatterns = i18n_patterns(
     path('auth/', include('users.urls')),
     path('', include('portfolio.urls')),

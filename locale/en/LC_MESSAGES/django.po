@@ -8,63 +8,73 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-17 13:29+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2023-02-19 23:39+0100\n"
+"PO-Revision-Date: 2023-02-19 23:56+0000\n"
+"Last-Translator: Pavel Harelik <pavelgorelik25@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: .\messanger\templates\base.html:21
-#: .\portfolio\templates\portfolio\base.html:21 .\users\templates\base.html:21
+#: .\messanger\templates\base.html:21 .\portfolio\templates\404.html:15
+#: .\portfolio\templates\portfolio\4042.html:15
+#: .\portfolio\templates\portfolio\base.html:20 .\users\templates\base.html:21
 #: .\users\templates\registration\signup.html:21
 msgid "Home"
 msgstr ""
 
-#: .\messanger\templates\base.html:22
-#: .\portfolio\templates\portfolio\base.html:22 .\users\templates\base.html:22
+#: .\messanger\templates\base.html:22 .\portfolio\templates\404.html:16
+#: .\portfolio\templates\portfolio\4042.html:16
+#: .\portfolio\templates\portfolio\base.html:21 .\users\templates\base.html:22
 msgid "Projects"
 msgstr ""
 
-#: .\messanger\templates\base.html:24
-#: .\portfolio\templates\portfolio\base.html:24 .\users\templates\base.html:24
+#: .\messanger\templates\base.html:24 .\portfolio\templates\404.html:18
+#: .\portfolio\templates\portfolio\4042.html:18
+#: .\portfolio\templates\portfolio\base.html:23 .\users\templates\base.html:24
 msgid "My account"
 msgstr ""
 
-#: .\messanger\templates\base.html:25
-#: .\portfolio\templates\portfolio\base.html:25 .\users\templates\base.html:25
+#: .\messanger\templates\base.html:25 .\portfolio\templates\404.html:19
+#: .\portfolio\templates\portfolio\4042.html:19
+#: .\portfolio\templates\portfolio\base.html:24 .\users\templates\base.html:25
 msgid "Log out"
 msgstr ""
 
-#: .\messanger\templates\base.html:27
-#: .\portfolio\templates\portfolio\base.html:27 .\users\templates\base.html:27
+#: .\messanger\templates\base.html:27 .\portfolio\templates\404.html:21
+#: .\portfolio\templates\portfolio\4042.html:21
+#: .\portfolio\templates\portfolio\base.html:26 .\users\templates\base.html:27
 #: .\users\templates\registration\login.html:5
 #: .\users\templates\registration\login.html:41
 #: .\users\templates\registration\signup.html:20
 msgid "Log in"
 msgstr ""
 
-#: .\messanger\templates\base.html:28
-#: .\portfolio\templates\portfolio\base.html:28 .\users\templates\base.html:28
+#: .\messanger\templates\base.html:28 .\portfolio\templates\404.html:22
+#: .\portfolio\templates\portfolio\4042.html:22
+#: .\portfolio\templates\portfolio\base.html:27 .\users\templates\base.html:28
 #: .\users\templates\registration\signup.html:5
 msgid "Sign up"
 msgstr ""
 
-#: .\messanger\templates\base.html:41
-#: .\portfolio\templates\portfolio\base.html:41 .\users\templates\base.html:41
+#: .\messanger\templates\base.html:41 .\portfolio\templates\404.html:34
+#: .\portfolio\templates\portfolio\4042.html:34
+#: .\portfolio\templates\portfolio\base.html:40 .\users\templates\base.html:41
 msgid "Want to know more or just chat?"
 msgstr ""
 
-#: .\messanger\templates\base.html:42
-#: .\portfolio\templates\portfolio\base.html:42 .\users\templates\base.html:42
+#: .\messanger\templates\base.html:42 .\portfolio\templates\404.html:35
+#: .\portfolio\templates\portfolio\4042.html:35
+#: .\portfolio\templates\portfolio\base.html:41 .\users\templates\base.html:42
 msgid "You are welcome!"
 msgstr ""
 
-#: .\messanger\templates\base.html:47
-#: .\portfolio\templates\portfolio\base.html:47 .\users\templates\base.html:47
+#: .\messanger\templates\base.html:47 .\portfolio\templates\404.html:40
+#: .\portfolio\templates\portfolio\4042.html:40
+#: .\portfolio\templates\portfolio\base.html:46 .\users\templates\base.html:47
 msgid "Contact to me using this site"
 msgstr ""
 
@@ -101,6 +111,17 @@ msgstr ""
 
 #: .\messanger\templates\messanger\new.html:18
 msgid "Create"
+msgstr ""
+
+#: .\portfolio\templates\404.html:7 .\portfolio\templates\404.html:28
+#: .\portfolio\templates\portfolio\4042.html:7
+#: .\portfolio\templates\portfolio\4042.html:28
+msgid "Error 404"
+msgstr ""
+
+#: .\portfolio\templates\404.html:28
+#: .\portfolio\templates\portfolio\4042.html:28
+msgid "Page not found"
 msgstr ""
 
 #: .\portfolio\templates\portfolio\details.html:12
@@ -149,13 +170,13 @@ msgstr ""
 
 #: .\portfolio_azure\settings.py:129
 msgid "Russian"
-msgstr ""
+msgstr "Русский"
 
 #: .\portfolio_azure\settings.py:130
 msgid "Polish"
-msgstr ""
+msgstr "Polski"
 
-#: .\portfolio_azure\urls.py:29
+#: .\portfolio_azure\urls.py:31
 msgid "admin/"
 msgstr ""
 

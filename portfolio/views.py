@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from portfolio.models import Project
-from django.db.models import Avg, Count, Q
+from django.shortcuts import get_object_or_404
 
 
 def index(request):
@@ -24,8 +24,9 @@ def projects(request):
 
 
 def details(request, id):
-    try:
-        project = Project.objects.get(id=id)
-    except Project.DoesNotExist:
-        return redirect('projects')
+    project = get_object_or_404(Project, id=id)
     return render(request, 'portfolio/details.html', {'project': project})
+
+
+def page_not_found_view(request, exception):
+    return render(request, '404.html', status=404)
