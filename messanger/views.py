@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from .models import Conversation, Message
 from django.db.models import Avg, Count, Q
 from django.http import JsonResponse
+from django.utils import timezone
 
 # Create your views here.
 
@@ -18,6 +19,12 @@ def home(request):
 def conversation(request, conversation_id):
     if (request.user.is_anonymous):
         return redirect('/auth/login/?next=/messanger/')
+
+    if ('timezone' in request.COOKIES):
+        print(request.COOKIES['timezone'])
+        request.session['django_timezone'] = request.COOKIES['timezone']
+        timezone.activate(request.session['django_timezone'])
+
     if request.method == 'POST' and request.POST['text']:
         user = User.objects.get(username=request.user)
         conversation = Conversation.objects.get(id=conversation_id)
@@ -25,7 +32,6 @@ def conversation(request, conversation_id):
             conversation=conversation, author=user.username, text=request.POST['text'])
 
         lang_ref = request.META.get('HTTP_REFERER').split('/')[-5]
-        print(lang_ref)
         return redirect(f'/{lang_ref}/messanger/conversation/' + str(conversation.id))
 
 

@@ -5,14 +5,13 @@
 {% block css %}
 <link rel="stylesheet" href="{% static 'css/conversation.css' %}">
 {% endblock %}
+{% load tz %}
 
 
 {% block content %}
 <a id="back" href="{% url 'messanger_home' %}">{% trans 'Back' %}</a>
 <h2>{{ conversation.name }}</h2>
 <h2 class="error">{{ error }}</h2>
-
-
 {% for message in messages %}
 {% if message.author == request.user.username%}
 <div class="message_container" id="my">
@@ -54,10 +53,16 @@
                 }
             });
         }
+        function get_timezone() {
+            var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+            document.cookie = "timezone=" + timezone + ";path=/"; 
+        }
         $(document).ready(function () {
             var last_message_id = $('#last_message').val()
             var conversation_id = "{{ conversation.id }}"
+            get_timezone()
             setInterval(check_updates, 2000, last_message_id, conversation_id)
         });
+
     </script>
     {% endblock %}
