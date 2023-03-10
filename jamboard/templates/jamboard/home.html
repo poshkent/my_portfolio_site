@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %}{% trans 'Jamboard' %}{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/jamboard.css' %}">
+{% endblock %}
+
+
+{% block content %}
+<h2> {% trans 'Jamboards' %} </h2>
+<div id="new_jamboard">
+    <a href="{% url 'new_jamboard' %}">{% trans 'New Jamboard' %}</a>
+</div>
+{% for conv in conversations %}
+<div class="conversation">
+    <a href="{% url 'conversation' conversation_id=conv.id %}">{{ conv.name }}</a>
+    <p>{{ conv.last_message }}</p>
+</div>
+{% endfor %}
+{% endblock %}

@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'messanger',
     'rosetta',
     'parler',
+    'jamboard',
 ]
 
 MIDDLEWARE = [
