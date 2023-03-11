@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% block title %}{% trans 'Jamboard' %}{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/conversation.css' %}">
+{% endblock %}
+{% load tz %}
+
+
+{% block content %}
+<a id="back" href="{% url 'jamboard_home' %}">{% trans 'Back' %}</a>
+<h2>{{ board.title }}</h2>
+<h2 class="error">{{ error }}</h2>
+<p>{{board.text}}</p>
+<h2>Files</h2>
+{% for file in files %}
+<div class="file">
+    <a href='/{{file}}'>{{ file}}</a>
+</div>
+{% endfor %}
+<h2>Images</h2>
+{% for image in images %}
+<div class="image">
+    <a href="/{{ image }}"><img src="/{{ image }}"></a>
+</div>
+{% endfor %}
+
+{% endblock %}

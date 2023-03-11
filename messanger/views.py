@@ -21,7 +21,6 @@ def conversation(request, conversation_id):
         return redirect('/auth/login/?next=/messanger/')
 
     if ('timezone' in request.COOKIES):
-        print(request.COOKIES['timezone'])
         request.session['django_timezone'] = request.COOKIES['timezone']
         timezone.activate(request.session['django_timezone'])
 
@@ -33,7 +32,6 @@ def conversation(request, conversation_id):
 
         lang_ref = request.META.get('HTTP_REFERER').split('/')[-5]
         return redirect(f'/{lang_ref}/messanger/conversation/' + str(conversation.id))
-
 
     try:
         conversation = Conversation.objects.get(id=conversation_id)
@@ -94,7 +92,6 @@ def get_last_message_id(request):
         return redirect('/auth/login/?next=/messanger/')
     if request.headers.get('x-requested-with') == 'XMLHttpRequest':
         conversation_id = request.POST.get('conversation_id', None)
-        print(conversation_id)
         conversation = Conversation.objects.get(id=conversation_id)
         messages = list(conversation.messages.all())
         if messages:

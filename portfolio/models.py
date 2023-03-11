@@ -14,4 +14,4 @@ class Project(TranslatableModel):
     )
 
     def __str__(self):
-        return self.name
+        return self.translations.name

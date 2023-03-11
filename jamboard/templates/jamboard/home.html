@@ -3,7 +3,7 @@
 {% load i18n %}
 {% block title %}{% trans 'Jamboard' %}{% endblock %}
 {% block css %}
-<link rel="stylesheet" href="{% static 'css/jamboard.css' %}">
+<link rel="stylesheet" href="{% static 'css/messanger.css' %}">
 {% endblock %}
 
 
@@ -12,10 +12,9 @@
 <div id="new_jamboard">
     <a href="{% url 'new_jamboard' %}">{% trans 'New Jamboard' %}</a>
 </div>
-{% for conv in conversations %}
+{% for board in jamboards %}
 <div class="conversation">
-    <a href="{% url 'conversation' conversation_id=conv.id %}">{{ conv.name }}</a>
-    <p>{{ conv.last_message }}</p>
+    <a href="{% url 'jamboard' conversation_id=board.id %}">{{ board.title }}</a>
 </div>
 {% endfor %}
 {% endblock %}

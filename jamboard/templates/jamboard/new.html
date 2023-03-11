@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %}{% trans 'Start new conversation' %}{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/forms.css' %}">
+{% endblock %}
+
+{% block content %}
+<a id="back" href="{% url 'jamboard_home' %}">{% trans 'Back' %}</a>
+<h2> {% trans 'Create new jamboard' %} </h2>
+<h2 class="error">{{ error }}</h2>
+<form method="post">
+    {% csrf_token %}
+    <label for="title">{% trans 'Type title for jamboard' %}</label>
+    <input autocomplete="off" id="title" type="text" name="title">
+    <input type="submit" value="{% trans 'Create' %}">
+</form>
+
+{% endblock %}
