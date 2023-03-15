@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-19 23:39+0100\n"
+"POT-Creation-Date: 2023-03-15 21:56+0000\n"
 "PO-Revision-Date: 2023-02-19 23:56+0000\n"
 "Last-Translator: Pavel Harelik <pavelgorelik25@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,211 +19,265 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: .\messanger\templates\base.html:21 .\portfolio\templates\404.html:15
-#: .\portfolio\templates\portfolio\4042.html:15
-#: .\portfolio\templates\portfolio\base.html:20 .\users\templates\base.html:21
-#: .\users\templates\registration\signup.html:21
+#: jamboard/templates/base.html:21 messanger/templates/base.html:21
+#: portfolio/templates/404.html:16 portfolio/templates/portfolio/base.html:20
+#: users/templates/base.html:21 users/templates/registration/signup.html:21
 msgid "Home"
 msgstr ""
 
-#: .\messanger\templates\base.html:22 .\portfolio\templates\404.html:16
-#: .\portfolio\templates\portfolio\4042.html:16
-#: .\portfolio\templates\portfolio\base.html:21 .\users\templates\base.html:22
+#: jamboard/templates/base.html:22 messanger/templates/base.html:22
+#: portfolio/templates/404.html:17 portfolio/templates/portfolio/base.html:21
+#: users/templates/base.html:22
 msgid "Projects"
 msgstr ""
 
-#: .\messanger\templates\base.html:24 .\portfolio\templates\404.html:18
-#: .\portfolio\templates\portfolio\4042.html:18
-#: .\portfolio\templates\portfolio\base.html:23 .\users\templates\base.html:24
+#: jamboard/templates/base.html:24 messanger/templates/base.html:24
+#: portfolio/templates/404.html:19 portfolio/templates/portfolio/base.html:23
+#: users/templates/base.html:24
 msgid "My account"
 msgstr ""
 
-#: .\messanger\templates\base.html:25 .\portfolio\templates\404.html:19
-#: .\portfolio\templates\portfolio\4042.html:19
-#: .\portfolio\templates\portfolio\base.html:24 .\users\templates\base.html:25
+#: jamboard/templates/base.html:25 messanger/templates/base.html:25
+#: portfolio/templates/404.html:20 portfolio/templates/portfolio/base.html:24
+#: users/templates/base.html:25
 msgid "Log out"
 msgstr ""
 
-#: .\messanger\templates\base.html:27 .\portfolio\templates\404.html:21
-#: .\portfolio\templates\portfolio\4042.html:21
-#: .\portfolio\templates\portfolio\base.html:26 .\users\templates\base.html:27
-#: .\users\templates\registration\login.html:5
-#: .\users\templates\registration\login.html:41
-#: .\users\templates\registration\signup.html:20
+#: jamboard/templates/base.html:27 messanger/templates/base.html:27
+#: portfolio/templates/404.html:22 portfolio/templates/portfolio/base.html:26
+#: users/templates/base.html:27 users/templates/registration/login.html:5
+#: users/templates/registration/login.html:41
+#: users/templates/registration/signup.html:20
 msgid "Log in"
 msgstr ""
 
-#: .\messanger\templates\base.html:28 .\portfolio\templates\404.html:22
-#: .\portfolio\templates\portfolio\4042.html:22
-#: .\portfolio\templates\portfolio\base.html:27 .\users\templates\base.html:28
-#: .\users\templates\registration\signup.html:5
+#: jamboard/templates/base.html:28 messanger/templates/base.html:28
+#: portfolio/templates/404.html:23 portfolio/templates/portfolio/base.html:27
+#: users/templates/base.html:28 users/templates/registration/signup.html:5
 msgid "Sign up"
 msgstr ""
 
-#: .\messanger\templates\base.html:41 .\portfolio\templates\404.html:34
-#: .\portfolio\templates\portfolio\4042.html:34
-#: .\portfolio\templates\portfolio\base.html:40 .\users\templates\base.html:41
+#: jamboard/templates/base.html:41 messanger/templates/base.html:41
+#: portfolio/templates/404.html:35 portfolio/templates/portfolio/base.html:40
+#: users/templates/base.html:41
 msgid "Want to know more or just chat?"
 msgstr ""
 
-#: .\messanger\templates\base.html:42 .\portfolio\templates\404.html:35
-#: .\portfolio\templates\portfolio\4042.html:35
-#: .\portfolio\templates\portfolio\base.html:41 .\users\templates\base.html:42
+#: jamboard/templates/base.html:42 messanger/templates/base.html:42
+#: portfolio/templates/404.html:36 portfolio/templates/portfolio/base.html:41
+#: users/templates/base.html:42
 msgid "You are welcome!"
 msgstr ""
 
-#: .\messanger\templates\base.html:47 .\portfolio\templates\404.html:40
-#: .\portfolio\templates\portfolio\4042.html:40
-#: .\portfolio\templates\portfolio\base.html:46 .\users\templates\base.html:47
+#: jamboard/templates/base.html:47 messanger/templates/base.html:47
+#: portfolio/templates/404.html:41 portfolio/templates/portfolio/base.html:46
+#: users/templates/base.html:47
 msgid "Contact to me using this site"
 msgstr ""
 
-#: .\messanger\templates\messanger\conversation.html:4
-#: .\messanger\templates\messanger\home.html:4
-msgid "Messanger"
+#: jamboard/templates/jamboard/home.html:4
+#: jamboard/templates/jamboard/jamboard.html:4
+msgid "Jamboard"
 msgstr ""
 
-#: .\messanger\templates\messanger\conversation.html:11
-#: .\messanger\templates\messanger\new.html:10
+#: jamboard/templates/jamboard/home.html:11
+msgid "Jamboards"
+msgstr ""
+
+#: jamboard/templates/jamboard/home.html:13
+msgid "New Jamboard"
+msgstr ""
+
+#: jamboard/templates/jamboard/jamboard.html:14
+#: jamboard/templates/jamboard/jamboard.html:69
+#: jamboard/templates/jamboard/new.html:10
+#: messanger/templates/messanger/conversation.html:12
+#: messanger/templates/messanger/new.html:10
 msgid "Back"
 msgstr ""
 
-#: .\messanger\templates\messanger\conversation.html:39
-msgid "Send"
+#: jamboard/templates/jamboard/jamboard.html:18
+msgid "Title"
 msgstr ""
 
-#: .\messanger\templates\messanger\home.html:11
-msgid "Conversations"
-msgstr ""
-
-#: .\messanger\templates\messanger\home.html:13
-msgid "New conversation"
-msgstr ""
-
-#: .\messanger\templates\messanger\new.html:4
-#: .\messanger\templates\messanger\new.html:11
-msgid "Start new conversation"
-msgstr ""
-
-#: .\messanger\templates\messanger\new.html:15
-msgid "Type username of your companion"
-msgstr ""
-
-#: .\messanger\templates\messanger\new.html:18
-msgid "Create"
-msgstr ""
-
-#: .\portfolio\templates\404.html:7 .\portfolio\templates\404.html:28
-#: .\portfolio\templates\portfolio\4042.html:7
-#: .\portfolio\templates\portfolio\4042.html:28
-msgid "Error 404"
-msgstr ""
-
-#: .\portfolio\templates\404.html:28
-#: .\portfolio\templates\portfolio\4042.html:28
-msgid "Page not found"
-msgstr ""
-
-#: .\portfolio\templates\portfolio\details.html:12
-msgid "Description"
-msgstr ""
-
-#: .\portfolio\templates\portfolio\details.html:14
-msgid "Used skills for this project:"
-msgstr ""
-
-#: .\portfolio\templates\portfolio\details.html:16
-msgid "Link for GitHub"
-msgstr ""
-
-#: .\portfolio\templates\portfolio\main.html:4
-msgid "Pavel Harelik"
-msgstr ""
-
-#: .\portfolio\templates\portfolio\main.html:10
-msgid "Harelik"
-msgstr ""
-
-#: .\portfolio\templates\portfolio\main.html:10
-msgid "Pavel"
-msgstr ""
-
-#: .\portfolio\templates\portfolio\main.html:11
-msgid "Student"
-msgstr ""
-
-#: .\portfolio\templates\portfolio\main.html:11
-msgid "17 years old, Gdańsk"
-msgstr ""
-
-#: .\portfolio\templates\portfolio\main.html:17
-msgid "My Skills"
-msgstr ""
-
-#: .\portfolio\templates\portfolio\projects.html:18
-msgid "There is no projects yet"
-msgstr ""
-
-#: .\portfolio_azure\settings.py:128
-msgid "English"
-msgstr ""
-
-#: .\portfolio_azure\settings.py:129
-msgid "Russian"
-msgstr "Русский"
-
-#: .\portfolio_azure\settings.py:130
-msgid "Polish"
-msgstr "Polski"
-
-#: .\portfolio_azure\urls.py:31
-msgid "admin/"
-msgstr ""
-
-#: .\users\templates\registration\login.html:14
-msgid "Your username and password didn't match. Please try again."
-msgstr ""
-
-#: .\users\templates\registration\login.html:22
-msgid "Please login to see this page."
-msgstr ""
-
-#: .\users\templates\registration\login.html:46
-msgid "Lost password?"
-msgstr ""
-
-#: .\users\templates\registration\signup.html:12
-msgid "Register"
-msgstr ""
-
-#: .\users\templates\users\account.html:5
-msgid "Account settings"
-msgstr ""
-
-#: .\users\templates\users\account.html:14
-msgid "Logged in as"
-msgstr ""
-
-#: .\users\templates\users\account.html:17
-msgid "First name"
-msgstr ""
-
-#: .\users\templates\users\account.html:20
-msgid "Last name"
-msgstr ""
-
-#: .\users\templates\users\account.html:26
+#: jamboard/templates/jamboard/jamboard.html:20
+#: jamboard/templates/jamboard/jamboard.html:26
+#: users/templates/users/account.html:26
 msgid "Save"
 msgstr ""
 
-#: .\users\templates\users\account.html:29
+#: jamboard/templates/jamboard/jamboard.html:24
+msgid "Text"
+msgstr ""
+
+#: jamboard/templates/jamboard/jamboard.html:28
+#: jamboard/templates/jamboard/jamboard.html:74
+msgid "Files"
+msgstr ""
+
+#: jamboard/templates/jamboard/jamboard.html:33
+#: jamboard/templates/jamboard/jamboard.html:53
+msgid "Upload"
+msgstr ""
+
+#: jamboard/templates/jamboard/jamboard.html:45
+#: jamboard/templates/jamboard/jamboard.html:64
+msgid "Delete"
+msgstr ""
+
+#: jamboard/templates/jamboard/jamboard.html:49
+#: jamboard/templates/jamboard/jamboard.html:82
+msgid "Images"
+msgstr ""
+
+#: jamboard/templates/jamboard/new.html:4
+#: messanger/templates/messanger/new.html:4
+#: messanger/templates/messanger/new.html:11
+msgid "Start new conversation"
+msgstr ""
+
+#: jamboard/templates/jamboard/new.html:11
+msgid "Create new jamboard"
+msgstr ""
+
+#: jamboard/templates/jamboard/new.html:15
+msgid "Type title for jamboard"
+msgstr ""
+
+#: jamboard/templates/jamboard/new.html:17
+#: messanger/templates/messanger/new.html:18
+msgid "Create"
+msgstr ""
+
+#: messanger/templates/messanger/conversation.html:4
+#: messanger/templates/messanger/home.html:4
+msgid "Messanger"
+msgstr ""
+
+#: messanger/templates/messanger/conversation.html:38
+msgid "Send"
+msgstr ""
+
+#: messanger/templates/messanger/home.html:11
+msgid "Conversations"
+msgstr ""
+
+#: messanger/templates/messanger/home.html:13
+msgid "New conversation"
+msgstr ""
+
+#: messanger/templates/messanger/new.html:15
+msgid "Type username of your companion"
+msgstr ""
+
+#: portfolio/templates/404.html:8 portfolio/templates/404.html:29
+msgid "Error 404"
+msgstr ""
+
+#: portfolio/templates/404.html:29
+msgid "Page not found"
+msgstr ""
+
+#: portfolio/templates/portfolio/details.html:12
+msgid "Description"
+msgstr ""
+
+#: portfolio/templates/portfolio/details.html:14
+msgid "Used skills for this project:"
+msgstr ""
+
+#: portfolio/templates/portfolio/details.html:16
+msgid "Link for GitHub"
+msgstr ""
+
+#: portfolio/templates/portfolio/main.html:4
+msgid "Pavel Harelik"
+msgstr ""
+
+#: portfolio/templates/portfolio/main.html:10
+msgid "Harelik"
+msgstr ""
+
+#: portfolio/templates/portfolio/main.html:10
+msgid "Pavel"
+msgstr ""
+
+#: portfolio/templates/portfolio/main.html:11
+msgid "Student"
+msgstr ""
+
+#: portfolio/templates/portfolio/main.html:11
+msgid "17 years old, Gdańsk"
+msgstr ""
+
+#: portfolio/templates/portfolio/main.html:17
+msgid "My Skills"
+msgstr ""
+
+#: portfolio/templates/portfolio/projects.html:18
+msgid "There is no projects yet"
+msgstr ""
+
+#: portfolio_azure/settings.py:129
+msgid "English"
+msgstr ""
+
+#: portfolio_azure/settings.py:130
+msgid "Russian"
+msgstr "Русский"
+
+#: portfolio_azure/settings.py:131
+msgid "Polish"
+msgstr "Polski"
+
+#: portfolio_azure/urls.py:31
+msgid "admin/"
+msgstr ""
+
+#: users/templates/registration/login.html:14
+msgid "Your username and password didn't match. Please try again."
+msgstr ""
+
+#: users/templates/registration/login.html:22
+msgid "Please login to see this page."
+msgstr ""
+
+#: users/templates/registration/login.html:46
+msgid "Lost password?"
+msgstr ""
+
+#: users/templates/registration/signup.html:12
+msgid "Register"
+msgstr ""
+
+#: users/templates/users/account.html:5
+msgid "Account settings"
+msgstr ""
+
+#: users/templates/users/account.html:14
+msgid "Logged in as"
+msgstr ""
+
+#: users/templates/users/account.html:17
+msgid "First name"
+msgstr ""
+
+#: users/templates/users/account.html:20
+msgid "Last name"
+msgstr ""
+
+#: users/templates/users/account.html:29
 msgid "Go to messanger application"
 msgstr ""
 
-#: .\users\templates\users\account.html:35
+#: users/templates/users/account.html:30
+msgid "Go to jamboard aplication"
+msgstr ""
+
+#: users/templates/users/account.html:36
 msgid "Select your language"
 msgstr ""
 
-#: .\users\templates\users\account.html:71
+#: users/templates/users/account.html:72
 msgid "Log in first"
 msgstr ""

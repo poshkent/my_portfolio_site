@@ -26,7 +26,8 @@
     <input type="submit" value="{% trans 'Save' %}">
 </form>
 
-<a href="{% url 'messanger_home' %}">{% trans 'Go to messanger application' %}</a>
+<a href="{% url 'messanger_home' %}">{% trans 'Go to messanger application' %}</a> <br>
+<a href="{% url 'jamboard_home' %}">{% trans 'Go to jamboard aplication' %}</a>
 
 {% get_current_language as CURRENT_LANGUAGE %}
 {% get_available_languages as AVAILABLE_LANGUAGES %}
