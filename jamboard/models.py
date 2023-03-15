@@ -15,8 +15,16 @@ class File(models.Model):
     def __str__(self):
         return self.file.name
     
+    def delete(self, *args, **kwargs):
+        self.file.delete()
+        super().delete(*args, **kwargs)
+    
 class Image(models.Model):
     image = models.ImageField(upload_to='static/images/')
     jamboard = models.ForeignKey(Jamboard, on_delete=models.CASCADE,related_name='images')
     def __str__(self):
         return self.image.name
+    
+    def delete(self, *args, **kwargs):
+        self.image.delete()
+        super().delete(*args, **kwargs)

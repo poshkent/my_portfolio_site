@@ -9,21 +9,84 @@
 
 
 {% block content %}
+
+{% if user.username == board.author %}
+<a id="back" href="{% url 'jamboard_home' %}">{% trans 'Back' %}</a>
+<h2 class="error">{{ error }}</h2>
+<form method="POST">
+    {% csrf_token %}
+    <label for="title">{% trans 'Title' %}</label>
+    <input type="text" name="title" value="{{ board.title }}">
+    <button type="submit">{% trans 'Save' %}</button>
+</form>
+<form method="POST">
+    {% csrf_token %}
+    <label for="text">{% trans 'Text' %}</label>
+    <input type="text" name="text" value="{{ board.text }}">
+    <button type="submit">{% trans 'Save' %}</button>
+</form>
+<h2>{% trans 'Files' %}</h2>
+
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="file">
+    <button type="submit">{% trans 'Upload' %}</button>
+</form>
+
+<form method="POST">
+    {% csrf_token %}
+    <input type="hidden" name="del_file" value="true">
+    {% for file in files %}
+    <div class="image">
+        <input type="checkbox" name="delete_file{{file.id}}" value="{{ file.id }}">
+        <a href='/{{file}}'>{{ file}}</a>
+    </div>
+    {% endfor %}
+    <input type="submit" value="{% trans 'Delete' %}">
+</form>
+
+
+<h2>{% trans 'Images' %}</h2>
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="image">
+    <button type="submit">{% trans 'Upload' %}</button>
+</form>
+<form method="POST">
+    {% csrf_token %}
+    <input type="hidden" name="del_pic" value="true">
+    {% for image in images %}
+    <div class="image">
+        <input type="checkbox" name="delete_pic{{image.id}}" value="{{ image.id }}">
+        <a href="/{{ image }}"><img src="/{{ image }}"></a>
+    </div>
+    {% endfor %}
+    <input type="submit" value="{% trans 'Delete' %}">
+</form>
+
+
+{% else %}
 <a id="back" href="{% url 'jamboard_home' %}">{% trans 'Back' %}</a>
 <h2>{{ board.title }}</h2>
 <h2 class="error">{{ error }}</h2>
 <p>{{board.text}}</p>
-<h2>Files</h2>
+{% if files %}
+<h2>{% trans 'Files' %}</h2>
 {% for file in files %}
 <div class="file">
     <a href='/{{file}}'>{{ file}}</a>
 </div>
 {% endfor %}
-<h2>Images</h2>
+{% endif %}
+{% if images %}
+<h2>{% trans 'Images' %}</h2>
 {% for image in images %}
 <div class="image">
     <a href="/{{ image }}"><img src="/{{ image }}"></a>
 </div>
 {% endfor %}
+{% endif %}
+
+{% endif %}
 
 {% endblock %}

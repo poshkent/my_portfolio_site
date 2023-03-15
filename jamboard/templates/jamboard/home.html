@@ -12,9 +12,17 @@
 <div id="new_jamboard">
     <a href="{% url 'new_jamboard' %}">{% trans 'New Jamboard' %}</a>
 </div>
+<div class="conversation">
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="search" placeholder="Search Jamboard">
+        <button type="submit">Search</button>
+    </form>
+    <h2>{{error}}</h2>
+</div>
 {% for board in jamboards %}
 <div class="conversation">
-    <a href="{% url 'jamboard' conversation_id=board.id %}">{{ board.title }}</a>
+    <a href="{% url 'jamboard' jamboard_id=board.id %}">{{ board.title }}</a>
 </div>
 {% endfor %}
 {% endblock %}
