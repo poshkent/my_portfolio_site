@@ -7,17 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-16 06:48+0000\n"
-"PO-Revision-Date: 2023-03-16 06:40+0000\n"
+"POT-Creation-Date: 2023-03-16 07:31+0000\n"
+"PO-Revision-Date: 2023-03-16 07:33+0000\n"
 "Last-Translator: Pavel Harelik <pavelgorelik25@gmail.com>\n"
 "Language-Team: \n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 "X-Generator: Poedit 3.2.2\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
@@ -59,19 +57,23 @@ msgstr "Войти"
 msgid "Sign up"
 msgstr "Регистрация"
 
-#: jamboard/templates/base.html:41 messanger/templates/base.html:41
+#: jamboard/templates/base.html:41
+msgid "Idea by Aliaksandr Shydlouski"
+msgstr "Идея Александра Шидловского"
+
+#: jamboard/templates/base.html:42 messanger/templates/base.html:41
 #: portfolio/templates/404.html:35 portfolio/templates/portfolio/base.html:40
 #: users/templates/base.html:41
 msgid "Want to know more or just chat?"
 msgstr "Хотите узнать больше или просто пообщаться?"
 
-#: jamboard/templates/base.html:42 messanger/templates/base.html:42
+#: jamboard/templates/base.html:43 messanger/templates/base.html:42
 #: portfolio/templates/404.html:36 portfolio/templates/portfolio/base.html:41
 #: users/templates/base.html:42
 msgid "You are welcome!"
 msgstr "Пожалуйста!"
 
-#: jamboard/templates/base.html:47 messanger/templates/base.html:47
+#: jamboard/templates/base.html:48 messanger/templates/base.html:47
 #: portfolio/templates/404.html:41 portfolio/templates/portfolio/base.html:46
 #: users/templates/base.html:47
 msgid "Contact to me using this site"
@@ -112,7 +114,7 @@ msgstr "Сохранить"
 msgid "Text"
 msgstr "Текст"
 
-#: jamboard/templates/jamboard/jamboard.html:28
+#: jamboard/templates/jamboard/jamboard.html:29
 #: jamboard/templates/jamboard/jamboard.html:74
 msgid "Files"
 msgstr "Файлы"
@@ -272,11 +274,11 @@ msgstr "Перейти в мессенджер"
 msgid "Go to jamboard aplication"
 msgstr "Перейти в Jamboard"
 
-#: users/templates/users/account.html:36
+#: users/templates/users/account.html:39
 msgid "Select your language"
 msgstr "Выберите ваш язык"
 
-#: users/templates/users/account.html:72
+#: users/templates/users/account.html:75
 msgid "Log in first"
 msgstr "Сначала войдите в аккаунт"
 

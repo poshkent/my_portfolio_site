@@ -16,7 +16,6 @@
 </head>
 
 <body>
-    {% get_current_language as CURRENT_LANGUAGE %}
     <header>
         <a href="{% url 'index' %}">{% trans 'Home' %}</a>
         <a href="{% url 'projects' %}">{% trans 'Projects' %}</a>
@@ -38,6 +37,7 @@
     <footer>
         <div>
             <h2>
+                {% trans 'Idea by Aliaksandr Shydlouski' %} <br>
                 {% trans 'Want to know more or just chat?' %} <br>
                 {% trans 'You are welcome!' %}
             </h2>
