@@ -27,7 +27,10 @@
 </form>
 
 <a href="{% url 'messanger_home' %}">{% trans 'Go to messanger application' %}</a> <br>
-<a href="{% url 'jamboard_home' %}">{% trans 'Go to jamboard aplication' %}</a>
+<a href="{% url 'jamboard_home' %}">{% trans 'Go to jamboard aplication' %}</a> <br>
+{% if user.is_superuser %}
+<a href="/admin">Admin panel</a>
+{% endif %}
 
 {% get_current_language as CURRENT_LANGUAGE %}
 {% get_available_languages as AVAILABLE_LANGUAGES %}

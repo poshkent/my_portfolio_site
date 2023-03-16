@@ -7,17 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-15 21:56+0000\n"
-"PO-Revision-Date: 2023-02-19 23:55+0000\n"
+"POT-Creation-Date: 2023-03-16 06:48+0000\n"
+"PO-Revision-Date: 2023-03-16 06:50+0000\n"
 "Last-Translator: Pavel Harelik <pavelgorelik25@gmail.com>\n"
 "Language-Team: \n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
-"(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
-"n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 "X-Generator: Poedit 3.2.2\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
@@ -88,7 +86,7 @@ msgstr ""
 
 #: jamboard/templates/jamboard/home.html:13
 msgid "New Jamboard"
-msgstr ""
+msgstr "Nowy Jamboard"
 
 #: jamboard/templates/jamboard/jamboard.html:14
 #: jamboard/templates/jamboard/jamboard.html:69
@@ -100,7 +98,7 @@ msgstr "Powróć"
 
 #: jamboard/templates/jamboard/jamboard.html:18
 msgid "Title"
-msgstr ""
+msgstr "Tytuł"
 
 #: jamboard/templates/jamboard/jamboard.html:20
 #: jamboard/templates/jamboard/jamboard.html:26
@@ -110,27 +108,27 @@ msgstr "Zapisz"
 
 #: jamboard/templates/jamboard/jamboard.html:24
 msgid "Text"
-msgstr ""
+msgstr "Tekst"
 
 #: jamboard/templates/jamboard/jamboard.html:28
 #: jamboard/templates/jamboard/jamboard.html:74
 msgid "Files"
-msgstr ""
+msgstr "Pliki"
 
 #: jamboard/templates/jamboard/jamboard.html:33
 #: jamboard/templates/jamboard/jamboard.html:53
 msgid "Upload"
-msgstr ""
+msgstr "Wyślij"
 
 #: jamboard/templates/jamboard/jamboard.html:45
 #: jamboard/templates/jamboard/jamboard.html:64
 msgid "Delete"
-msgstr ""
+msgstr "Usuń"
 
 #: jamboard/templates/jamboard/jamboard.html:49
 #: jamboard/templates/jamboard/jamboard.html:82
 msgid "Images"
-msgstr ""
+msgstr "Zdjęcia"
 
 #: jamboard/templates/jamboard/new.html:4
 #: messanger/templates/messanger/new.html:4
@@ -140,11 +138,11 @@ msgstr "Rozpocznij nową rozmowę"
 
 #: jamboard/templates/jamboard/new.html:11
 msgid "Create new jamboard"
-msgstr ""
+msgstr "Utwórz nowy Jamboard"
 
 #: jamboard/templates/jamboard/new.html:15
 msgid "Type title for jamboard"
-msgstr ""
+msgstr "Wpisz tytuł dla Jaboardu"
 
 #: jamboard/templates/jamboard/new.html:17
 #: messanger/templates/messanger/new.html:18
@@ -232,10 +230,6 @@ msgstr "Русский"
 msgid "Polish"
 msgstr "Polski"
 
-#: portfolio_azure/urls.py:31
-msgid "admin/"
-msgstr ""
-
 #: users/templates/registration/login.html:14
 msgid "Your username and password didn't match. Please try again."
 msgstr "Twoja nazwa użytkownika i hasło nie pasują. Proszę spróbuj ponownie."
@@ -273,10 +267,9 @@ msgid "Go to messanger application"
 msgstr "Przejdź do aplikacji komunikatora"
 
 #: users/templates/users/account.html:30
-#, fuzzy
 #| msgid "Go to messanger application"
 msgid "Go to jamboard aplication"
-msgstr "Przejdź do aplikacji komunikatora"
+msgstr "Przejdź do aplikacji Jamboard"
 
 #: users/templates/users/account.html:36
 msgid "Select your language"

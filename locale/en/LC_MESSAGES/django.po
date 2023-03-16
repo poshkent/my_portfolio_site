@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-15 21:56+0000\n"
+"POT-Creation-Date: 2023-03-16 06:48+0000\n"
 "PO-Revision-Date: 2023-02-19 23:56+0000\n"
 "Last-Translator: Pavel Harelik <pavelgorelik25@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -229,10 +229,6 @@ msgstr "Русский"
 #: portfolio_azure/settings.py:131
 msgid "Polish"
 msgstr "Polski"
-
-#: portfolio_azure/urls.py:31
-msgid "admin/"
-msgstr ""
 
 #: users/templates/registration/login.html:14
 msgid "Your username and password didn't match. Please try again."

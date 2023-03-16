@@ -7,15 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-15 21:56+0000\n"
-"PO-Revision-Date: 2023-03-15 22:02+0000\n"
+"POT-Creation-Date: 2023-03-16 06:48+0000\n"
+"PO-Revision-Date: 2023-03-16 06:40+0000\n"
 "Last-Translator: Pavel Harelik <pavelgorelik25@gmail.com>\n"
 "Language-Team: \n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 "X-Generator: Poedit 3.2.2\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
@@ -230,10 +232,6 @@ msgstr "Русский"
 msgid "Polish"
 msgstr "Polski"
 
-#: portfolio_azure/urls.py:31
-msgid "admin/"
-msgstr ""
-
 #: users/templates/registration/login.html:14
 msgid "Your username and password didn't match. Please try again."
 msgstr "Ваше имя пользователя или пароль не подходят. Попробуйте снова."
@@ -271,10 +269,8 @@ msgid "Go to messanger application"
 msgstr "Перейти в мессенджер"
 
 #: users/templates/users/account.html:30
-#, fuzzy
-#| msgid "Go to messanger application"
 msgid "Go to jamboard aplication"
-msgstr "Перейти в мессенджер"
+msgstr "Перейти в Jamboard"
 
 #: users/templates/users/account.html:36
 msgid "Select your language"
