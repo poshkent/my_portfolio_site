@@ -74,7 +74,7 @@
 <h2>{% trans 'Files' %}</h2>
 {% for file in files %}
 <div class="file">
-    <a href='/{{file}}'>{{ file}}</a>
+    <a href='/{{file}}'>{{ file.name }}</a>
 </div>
 {% endfor %}
 {% endif %}
