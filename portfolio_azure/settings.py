@@ -25,7 +25,7 @@ IN_WEB = "SECRET_KEY" in os.environ
 if IN_WEB:
     SECRET_KEY = os.environ["SECRET_KEY"]
     DEBUG = False
-    ALLOWED_HOSTS = ["greedann.live", "www.greedann.live", ""]
+    ALLOWED_HOSTS = ["greedann.live", "www.greedann.live", "greedann-portfolio.azurewebsites.net/"]
 else:
     DEBUG = True
     from config import SECRET_KEY
@@ -34,7 +34,7 @@ else:
 # SECURITY WARNING: don't run with debug turned on in production!
 
 
-CSRF_TRUSTED_ORIGINS = ['https://*.greedann.live','https://*.127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://*.greedann.live','https://*.127.0.0.1', 'https://greedann-portfolio.azurewebsites.net/']
 
 
 # Application definition
